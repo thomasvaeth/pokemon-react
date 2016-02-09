@@ -1,8 +1,97 @@
+// Fisher–Yates shuffle algorithm
+function shuffle(arr) {
+	var m = arr.length, t, i;
+	// While there remain elements to shuffle…
+	while (m) {
+		// Pick a remaining element…
+		i = Math.floor(Math.random() * m--);
+		// And swap it with the current element.
+		t = arr[m];
+		arr[m] = arr[i];
+		arr[i] = t;
+	}
+	return arr;
+}
+
+function pokedex() {
+	let idArr = [];
+	for (let i = 1; i <= 151; i++) {
+		idArr.push(i);
+	}
+	return shuffle(idArr);
+}
+
+class PokemonCard extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {pokemon: {}};
+		this.getPokemon();
+	}
+
+	getPokemon() {
+		$.get(`http://pokeapi.co/api/v1/pokemon/${this.props.pokemonId}`).done(pokemon => {
+			this.setState({pokemon});
+			this.getSprite(pokemon);
+		});
+	}
+
+	getSprite(pokemon) {
+		$.get(`http://pokeapi.co/${pokemon.sprites[0].resource_uri}`).done(sprite => {
+			this.setState({sprite: `http://pokeapi.co/${sprite.image}`});
+		});
+	}
+
+	render() {
+		return (
+			<PokemonStats pokemon={this.state.pokemon} sprite={this.state.sprite} />
+		);
+	}
+}
+
+class PokemonStats extends React.Component {
+	render() {
+		let pokemon = this.props.pokemon;
+		let sprite = this.props.sprite;
+		return (
+			<div>
+				<h1>{pokemon.name}</h1>
+				<img src={sprite} />
+			</div>
+		);
+	}
+}
+
 class App extends React.Component {
+	constructor(props) {
+		super(props);
+		this.catchPokemon = this.catchPokemon.bind(this);
+		let pokemon = pokedex().slice(0, 6);
+		this.state = {pokemonIds: pokemon};
+	}
+
+	catchPokemon() {
+		let pokemon = pokedex().slice(0, 6);
+		this.setState({pokemonIds: pokemon});
+	}
+
 	render() {
 		return (
 			<div>
-				<h1>Gotta Catch Em All.</h1>
+				<button onClick={this.catchPokemon}>Gotta Catch Em All</button>
+				<CardsBinder pokemonIds={this.state.pokemonIds} />
+			</div>
+		);
+	}
+}
+
+class CardsBinder extends React.Component {
+	render() {
+		let cards = this.props.pokemonIds.map(pokemonId => {
+			return <PokemonCard key={pokemonId} pokemonId={pokemonId} />;
+		});
+		return (
+			<div>
+				{cards}
 			</div>
 		);
 	}
