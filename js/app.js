@@ -53,9 +53,11 @@ class PokemonStats extends React.Component {
 		let pokemon = this.props.pokemon;
 		let sprite = this.props.sprite;
 		return (
-			<div>
-				<h1>{pokemon.name}</h1>
-				<img src={sprite} />
+			<div className="small-4 columns">
+				<div className="callout secondary text-center">
+					<h1>{pokemon.name}</h1>
+					<img src={sprite} />
+				</div>
 			</div>
 		);
 	}
