@@ -1,3 +1,5 @@
+const {browserHistory, Router, Route, Link} = window.ReactRouter;
+
 // Fisher–Yates shuffle algorithm
 function shuffle(arr) {
 	var m = arr.length, t, i;
@@ -63,7 +65,7 @@ class PokemonStats extends React.Component {
 	}
 }
 
-class App extends React.Component {
+class HomePage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.catchPokemon = this.catchPokemon.bind(this);
@@ -79,6 +81,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
+				<Nav />
 				<button onClick={this.catchPokemon}>Gotta Catch Em All</button>
 				<CardsBinder pokemonIds={this.state.pokemonIds} />
 			</div>
@@ -94,6 +97,41 @@ class CardsBinder extends React.Component {
 		return (
 			<div>
 				{cards}
+			</div>
+		);
+	}
+}
+
+class Nav extends React.Component {
+	render() {
+		return (
+			<nav>
+				<Link to="/">Home</Link>
+				<Link to="/about">About</Link>
+			</nav>
+		);
+	}
+}
+
+class About extends React.Component {
+	render() {
+		return (
+			<div>
+				<Nav />
+				<h1>Ash Ketchum</h1>
+			</div>
+		);
+	}
+}
+
+class App extends React.Component {
+	render() {
+		return (
+			<div>
+				<Router history={browserHistory}>
+					<Route path="/" component={HomePage} />
+					<Route path="/about" component={About} />
+				</Router>
 			</div>
 		);
 	}
