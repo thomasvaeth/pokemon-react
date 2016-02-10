@@ -23,6 +23,17 @@ function pokedex() {
 	return shuffle(idArr);
 }
 
+function convertWeight(weight) {
+	return (weight * 0.220462).toFixed(0);
+}
+
+function convertHeight(height) {
+	let converted = (height * 0.328084);
+	let feet = Math.floor(converted);
+	let inches = ((converted - feet) * 3.93701).toFixed(0);
+	return feet + "'" + inches + '"';
+}
+
 class PokemonCard extends React.Component {
 	constructor(props) {
 		super(props);
@@ -54,11 +65,37 @@ class PokemonStats extends React.Component {
 	render() {
 		let pokemon = this.props.pokemon;
 		let sprite = this.props.sprite;
+		let converted_weight = convertWeight(pokemon.weight);
+		if (pokemon.national_id < 10) {
+			pokemon.formated_id = '00' + pokemon.national_id
+		} else if (pokemon.national_id < 100) {
+			pokemon.formated_id = '0' + pokemon.national_id
+		} else {
+			pokemon.formated_id = pokemon.national_id
+		}
+
 		return (
-			<div className="small-4 columns">
-				<div className="callout secondary text-center">
-					<h1>{pokemon.name}</h1>
+			<div className="card">
+				<div className="name">
+					<h2>{pokemon.name}</h2>
+					<p>{pokemon.hp}HP</p>
+				</div>
+				<div className="image">
 					<img src={sprite} />
+				</div>
+				<div className="stats">
+					Length: {convertHeight(pokemon.height)},
+					Weight: {convertWeight(pokemon.weight)} lbs.
+				</div>
+				<div className="about">
+					<div className="id">
+						<h3>{pokemon.formated_id}</h3>
+					</div>
+					<div className="abilities">
+						<p>Attack: {pokemon.attack}</p>
+						<p>Defense: {pokemon.defense}</p>
+						<p>Speed: {pokemon.speed}</p>
+					</div>
 				</div>
 			</div>
 		);
@@ -81,9 +118,10 @@ class HomePage extends React.Component {
 	render() {
 		return (
 			<div>
-				<Nav />
-				<button onClick={this.catchPokemon}>Gotta Catch Em All</button>
-				<CardsBinder pokemonIds={this.state.pokemonIds} />
+				<div>
+					<button onClick={this.catchPokemon}>Gotta Catch Em All</button>
+					<CardsBinder pokemonIds={this.state.pokemonIds} />
+				</div>
 			</div>
 		);
 	}
@@ -95,7 +133,7 @@ class CardsBinder extends React.Component {
 			return <PokemonCard key={pokemonId} pokemonId={pokemonId} />;
 		});
 		return (
-			<div>
+			<div className="container">
 				{cards}
 			</div>
 		);
@@ -130,7 +168,7 @@ class App extends React.Component {
 			<div>
 				<Router history={browserHistory}>
 					<Route path="/" component={HomePage} />
-					<Route path="/about" component={About} />
+					<Route path="about" component={About} />
 				</Router>
 			</div>
 		);
