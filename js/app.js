@@ -107,11 +107,11 @@ class HomePage extends React.Component {
 		super(props);
 		this.catchPokemon = this.catchPokemon.bind(this);
 		let pokemon = pokedex().slice(0, 6);
-		this.state = {pokemonIds: pokemon};
+		this.state = {pokemonIds: [1, 4, 7]};
 	}
 
 	catchPokemon() {
-		let pokemon = pokedex().slice(0, 6);
+		let pokemon = pokedex().slice(0, 10);
 		this.setState({pokemonIds: pokemon});
 	}
 

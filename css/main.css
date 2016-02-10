@@ -1,0 +1,57 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .container .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    width: 260px;
+    margin: 5px;
+    border: 8px solid yellow;
+    border-radius: 10px;
+    background-color: white; }
+    .container .card .name {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 50px;
+      width: 100%; }
+    .container .card .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px; }
+    .container .card .stats {
+      display: flex;
+      justify-content: center;
+      height: 20px;
+      width: 80%;
+      padding: 5px 0;
+      margin: 2px 0 15px 0;
+      background-color: yellow;
+      font-size: 14px; }
+    .container .card .about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      width: 100%; }
+      .container .card .about .id {
+        padding-left: 15px;
+        text-align: center; }
+        .container .card .about .id p {
+          margin: 5px; }
+      .container .card .about .abilities {
+        padding-right: 10px; }
+        .container .card .about .abilities p {
+          margin: 0; }
