@@ -130,7 +130,7 @@ class App extends React.Component {
 			<div>
 				<Router history={browserHistory}>
 					<Route path="/" component={HomePage} />
-					<Route path="/about" component={About} />
+					<Route path="about" component={About} />
 				</Router>
 			</div>
 		);
