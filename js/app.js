@@ -1,7 +1,8 @@
+// React-Router
 const {browserHistory, Router, Route, Link} = window.ReactRouter;
 
 // Fisher–Yates shuffle algorithm
-function shuffle(arr) {
+function shuffleArr(arr) {
 	var m = arr.length, t, i;
 	// While there remain elements to shuffle…
 	while (m) {
@@ -15,12 +16,12 @@ function shuffle(arr) {
 	return arr;
 }
 
-function pokedex() {
+function pokedex(shuffle=true) {
 	let idArr = [];
 	for (let i = 1; i <= 151; i++) {
 		idArr.push(i);
 	}
-	return shuffle(idArr);
+	return shuffle ? shuffleArr(idArr) : idArr;
 }
 
 function convertWeight(weight) {
@@ -89,7 +90,7 @@ class PokemonStats extends React.Component {
 				</div>
 				<div className="about">
 					<div className="id">
-						<h3>{pokemon.formated_id}</h3>
+						<h3>{pokemon.formated_id}/151</h3>
 					</div>
 					<div className="abilities">
 						<p>Attack: {pokemon.attack}</p>
@@ -118,6 +119,7 @@ class HomePage extends React.Component {
 	render() {
 		return (
 			<div>
+				<Nav />
 				<div>
 					<button onClick={this.catchPokemon}>Gotta Catch Em All</button>
 					<CardsBinder pokemonIds={this.state.pokemonIds} />
@@ -140,13 +142,74 @@ class CardsBinder extends React.Component {
 	}
 }
 
-class Nav extends React.Component {
+class Pokedex extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {pokemon: {}};
+		this.getPokemon();
+	}
+
+	getPokemon() {
+		$.get(`http://pokeapi.co/api/v1/pokemon/${this.props.pokemonId}`).done(pokemon => {
+			this.setState({pokemon});
+		});
+	}
+
 	render() {
 		return (
-			<nav>
-				<Link to="/">Home</Link>
-				<Link to="/about">About</Link>
-			</nav>
+			<PokemonName pokemon={this.state.pokemon} />
+		);
+	}
+}
+
+class PokemonName extends React.Component {
+	render() {
+		let pokemon = this.props.pokemon;
+		if (pokemon.national_id < 10) {
+			pokemon.formated_id = '00' + pokemon.national_id
+		} else if (pokemon.national_id < 100) {
+			pokemon.formated_id = '0' + pokemon.national_id
+		} else {
+			pokemon.formated_id = pokemon.national_id
+		}
+
+		return (
+			<div>
+				<h2>{pokemon.name}</h2>
+				<h3>{pokemon.formated_id}/151</h3>
+			</div>
+		);
+	}
+}
+
+class Pokemon extends React.Component {
+	render() {
+		let cards = this.props.pokemonIds.map(pokemonId => {
+			return <Pokedex key={pokemonId} pokemonId={pokemonId} />;
+		});
+		return (
+			<div>
+				{cards}
+			</div>
+		);
+	}
+}
+
+class AllPokemon extends React.Component {
+	constructor(props) {
+		super(props);
+		let pokemon = pokedex(false);
+		this.state = {pokemonIds: pokemon};
+	}
+
+	render() {
+		return (
+			<div>
+				<Nav />
+				<div>
+					<Pokemon pokemonIds={this.state.pokemonIds} />
+				</div>
+			</div>
 		);
 	}
 }
@@ -162,12 +225,25 @@ class About extends React.Component {
 	}
 }
 
+class Nav extends React.Component {
+	render() {
+		return (
+			<nav>
+				<Link to="/">Home</Link>
+				<Link to="/pokedex">Pokedex</Link>
+				<Link to="/about">About</Link>
+			</nav>
+		);
+	}
+}
+
 class App extends React.Component {
 	render() {
 		return (
 			<div>
 				<Router history={browserHistory}>
 					<Route path="/" component={HomePage} />
+					<Route path="pokedex" component={AllPokemon} />
 					<Route path="about" component={About} />
 				</Router>
 			</div>
