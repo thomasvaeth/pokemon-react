@@ -2,7 +2,7 @@
 const {browserHistory, Router, Route, Link} = window.ReactRouter;
 
 // Fisher–Yates shuffle algorithm
-function shuffleArr(arr) {
+function shuffle(arr) {
 	var m = arr.length, t, i;
 	// While there remain elements to shuffle…
 	while (m) {
@@ -16,12 +16,12 @@ function shuffleArr(arr) {
 	return arr;
 }
 
-function pokedex(shuffle=true) {
+function pokedex() {
 	let idArr = [];
 	for (let i = 1; i <= 151; i++) {
 		idArr.push(i);
 	}
-	return shuffle ? shuffleArr(idArr) : idArr;
+	return shuffle(idArr);
 }
 
 function convertWeight(weight) {
@@ -33,6 +33,47 @@ function convertHeight(height) {
 	let feet = Math.floor(converted);
 	let inches = ((converted - feet) * 3.93701).toFixed(0);
 	return feet + "'" + inches + '"';
+}
+
+class PokemonStats extends React.Component {
+	render() {
+		let pokemon = this.props.pokemon;
+		let sprite = this.props.sprite;
+		let converted_weight = convertWeight(pokemon.weight);
+		if (pokemon.national_id < 10) {
+			pokemon.formated_id = '00' + pokemon.national_id;
+		} else if (pokemon.national_id < 100) {
+			pokemon.formated_id = '0' + pokemon.national_id;
+		} else {
+			pokemon.formated_id = pokemon.national_id;
+		}
+
+		return (
+			<div className="card">
+				<div className="name">
+					<h2>{pokemon.name}</h2>
+					<p>{pokemon.hp}HP</p>
+				</div>
+				<div className="image">
+					<img src={sprite} />
+				</div>
+				<div className="stats">
+					Length: {convertHeight(pokemon.height)},
+					Weight: {convertWeight(pokemon.weight)} lbs.
+				</div>
+				<div className="about">
+					<div className="id">
+						<h3>{pokemon.formated_id}/151</h3>
+					</div>
+					<div className="abilities">
+						<p>Attack: {pokemon.attack}</p>
+						<p>Defense: {pokemon.defense}</p>
+						<p>Speed: {pokemon.speed}</p>
+					</div>
+				</div>
+			</div>
+		);
+	}
 }
 
 class PokemonCard extends React.Component {
@@ -62,42 +103,14 @@ class PokemonCard extends React.Component {
 	}
 }
 
-class PokemonStats extends React.Component {
+class CardsBinder extends React.Component {
 	render() {
-		let pokemon = this.props.pokemon;
-		let sprite = this.props.sprite;
-		let converted_weight = convertWeight(pokemon.weight);
-		if (pokemon.national_id < 10) {
-			pokemon.formated_id = '00' + pokemon.national_id
-		} else if (pokemon.national_id < 100) {
-			pokemon.formated_id = '0' + pokemon.national_id
-		} else {
-			pokemon.formated_id = pokemon.national_id
-		}
-
+		let cards = this.props.pokemonIds.map(pokemonId => {
+			return <PokemonCard key={pokemonId} pokemonId={pokemonId} />;
+		});
 		return (
-			<div className="card">
-				<div className="name">
-					<h2>{pokemon.name}</h2>
-					<p>{pokemon.hp}HP</p>
-				</div>
-				<div className="image">
-					<img src={sprite} />
-				</div>
-				<div className="stats">
-					Length: {convertHeight(pokemon.height)},
-					Weight: {convertWeight(pokemon.weight)} lbs.
-				</div>
-				<div className="about">
-					<div className="id">
-						<h3>{pokemon.formated_id}/151</h3>
-					</div>
-					<div className="abilities">
-						<p>Attack: {pokemon.attack}</p>
-						<p>Defense: {pokemon.defense}</p>
-						<p>Speed: {pokemon.speed}</p>
-					</div>
-				</div>
+			<div className="container">
+				{cards}
 			</div>
 		);
 	}
@@ -129,29 +142,16 @@ class HomePage extends React.Component {
 	}
 }
 
-class CardsBinder extends React.Component {
-	render() {
-		let cards = this.props.pokemonIds.map(pokemonId => {
-			return <PokemonCard key={pokemonId} pokemonId={pokemonId} />;
-		});
-		return (
-			<div className="container">
-				{cards}
-			</div>
-		);
-	}
-}
-
 class Pokedex extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {pokemon: {}};
+		this.state = {pokemon: []};
 		this.getPokemon();
 	}
 
 	getPokemon() {
-		$.get(`http://pokeapi.co/api/v1/pokemon/${this.props.pokemonId}`).done(pokemon => {
-			this.setState({pokemon});
+		$.get('http://pokeapi.co/api/v2/pokedex/2').done(pokemon => {
+			this.setState({pokemon: pokemon.pokemon_entries});
 		});
 	}
 
@@ -164,55 +164,29 @@ class Pokedex extends React.Component {
 
 class PokemonName extends React.Component {
 	render() {
-		let pokemon = this.props.pokemon;
-		if (pokemon.national_id < 10) {
-			pokemon.formated_id = '00' + pokemon.national_id
-		} else if (pokemon.national_id < 100) {
-			pokemon.formated_id = '0' + pokemon.national_id
-		} else {
-			pokemon.formated_id = pokemon.national_id
-		}
+		let pokemon = this.props.pokemon.map(pokemonId => {
+			return <Pokemon key={pokemonId.entry_number} pokemonId={pokemonId} />
+		});
 
 		return (
-			<div>
-				<h2>{pokemon.name}</h2>
-				<h3>{pokemon.formated_id}/151</h3>
-			</div>
+			<ul>
+				{pokemon}
+			</ul>
 		);
 	}
 }
 
 class Pokemon extends React.Component {
 	render() {
-		let cards = this.props.pokemonIds.map(pokemonId => {
-			return <Pokedex key={pokemonId} pokemonId={pokemonId} />;
-		});
+		let pokemon = this.props.pokemonId;
 		return (
-			<div>
-				{cards}
-			</div>
+			<li>
+				{pokemon.pokemon_species.name} | {pokemon.entry_number}/151
+			</li>
 		);
 	}
 }
 
-class AllPokemon extends React.Component {
-	constructor(props) {
-		super(props);
-		let pokemon = pokedex(false);
-		this.state = {pokemonIds: pokemon};
-	}
-
-	render() {
-		return (
-			<div>
-				<Nav />
-				<div>
-					<Pokemon pokemonIds={this.state.pokemonIds} />
-				</div>
-			</div>
-		);
-	}
-}
 
 class About extends React.Component {
 	render() {
@@ -243,7 +217,7 @@ class App extends React.Component {
 			<div>
 				<Router history={browserHistory}>
 					<Route path="/" component={HomePage} />
-					<Route path="pokedex" component={AllPokemon} />
+					<Route path="pokedex" component={Pokedex} />
 					<Route path="about" component={About} />
 				</Router>
 			</div>
