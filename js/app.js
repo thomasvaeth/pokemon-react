@@ -132,9 +132,11 @@ class HomePage extends React.Component {
 		return (
 			<div>
 				<Nav />
-				<h1>PoKéMoN</h1>
+				<h1>PoKéMoN ReAcT</h1>
 				<div>
-					<button onClick={this.catchPokemon}>Gotta Catch Em All</button>
+					<div className="button">
+						<button onClick={this.catchPokemon}>Gotta Catch Em All</button>
+					</div>
 					<CardsBinder pokemonIds={this.state.pokemonIds} />
 				</div>
 			</div>
