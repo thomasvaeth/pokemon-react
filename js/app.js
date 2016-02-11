@@ -120,12 +120,11 @@ class HomePage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.catchPokemon = this.catchPokemon.bind(this);
-		let pokemon = pokedex().slice(0, 6);
 		this.state = {pokemonIds: [1, 4, 7]};
 	}
 
 	catchPokemon() {
-		let pokemon = pokedex().slice(0, 10);
+		let pokemon = pokedex().slice(0, 8);
 		this.setState({pokemonIds: pokemon});
 	}
 
@@ -133,6 +132,7 @@ class HomePage extends React.Component {
 		return (
 			<div>
 				<Nav />
+				<h1>PoKéMoN</h1>
 				<div>
 					<button onClick={this.catchPokemon}>Gotta Catch Em All</button>
 					<CardsBinder pokemonIds={this.state.pokemonIds} />
