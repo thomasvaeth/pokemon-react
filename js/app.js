@@ -41,11 +41,11 @@ class PokemonStats extends React.Component {
 		let sprite = this.props.sprite;
 		let converted_weight = convertWeight(pokemon.weight);
 		if (pokemon.national_id < 10) {
-			pokemon.formated_id = '00' + pokemon.national_id;
+			pokemon.formatted_id = '00' + pokemon.national_id;
 		} else if (pokemon.national_id < 100) {
-			pokemon.formated_id = '0' + pokemon.national_id;
+			pokemon.formatted_id = '0' + pokemon.national_id;
 		} else {
-			pokemon.formated_id = pokemon.national_id;
+			pokemon.formatted_id = pokemon.national_id;
 		}
 
 		return (
@@ -63,7 +63,7 @@ class PokemonStats extends React.Component {
 				</div>
 				<div className="about">
 					<div className="id">
-						<h3>{pokemon.formated_id}/151</h3>
+						<h3>{pokemon.formatted_id}/151</h3>
 					</div>
 					<div className="abilities">
 						<p>Attack: {pokemon.attack}</p>
@@ -165,7 +165,7 @@ class Pokedex extends React.Component {
 class PokemonName extends React.Component {
 	render() {
 		let pokemon = this.props.pokemon.map(pokemonId => {
-			return <Pokemon key={pokemonId.entry_number} pokemonId={pokemonId} />
+			return <Pokemon key={pokemonId.entry_number} pokemon={pokemonId} />
 		});
 
 		return (
@@ -178,10 +178,17 @@ class PokemonName extends React.Component {
 
 class Pokemon extends React.Component {
 	render() {
-		let pokemon = this.props.pokemonId;
+		let pokemon = this.props.pokemon;
+		if (pokemon.entry_number < 10) {
+			pokemon.formatted_number = '00' + pokemon.entry_number;
+		} else if (pokemon.entry_number < 100) {
+			pokemon.formatted_number = '0' + pokemon.entry_number;
+		} else {
+			pokemon.formatted_number = pokemon.entry_number;
+		}
 		return (
 			<li>
-				{pokemon.pokemon_species.name} | {pokemon.entry_number}/151
+				{pokemon.pokemon_species.name} | {pokemon.formatted_number}/151
 			</li>
 		);
 	}
