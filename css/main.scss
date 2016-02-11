@@ -10,9 +10,8 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	min-height: 100vh;
+	width: 100%;
 	background-color: lightgray;
 }
 
@@ -81,6 +80,36 @@ body {
 				p {
 					margin: 0;
 				}
+			}
+		}
+	}
+}
+
+.pokedex {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	.pokemon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100px;
+		width: 220px;
+		margin: 5px;
+		border: 3px solid yellow;
+		background-color: white;
+
+		h2 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-family: 'Pokemon Hollow';
+		}
+
+		&:hover {
+			h2 {
+				font-family: 'Pokemon Solid'
 			}
 		}
 	}

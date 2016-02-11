@@ -173,9 +173,9 @@ class PokemonName extends React.Component {
 		});
 
 		return (
-			<ul>
+			<div className="pokedex">
 				{pokemon}
-			</ul>
+			</div>
 		);
 	}
 }
@@ -192,9 +192,9 @@ class Pokemon extends React.Component {
 		}
 
 		return (
-			<li>
-				{capitalize(pokemon.pokemon_species.name)} | {pokemon.formatted_number}/151
-			</li>
+			<div className="pokemon">
+				<h2>{capitalize(pokemon.pokemon_species.name)}</h2>
+			</div>
 		);
 	}
 }
