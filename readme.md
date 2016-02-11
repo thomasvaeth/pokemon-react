@@ -6,11 +6,11 @@ Pokemon React is something I decided to build after seeing the Pokemon API came 
 * React
   - react-router
 * ES2015/ES6
-* HTML
+* Jade/HTML
 * Sass
   - Flexbox
 * JavaScript
 * jQuery
 * Gulp
-  - gulp, gulp-minify-css, gulp-rename, gulp-sass
+  - gulp, gulp-jade, gulp-minify-css, gulp-rename, gulp-sass
 * Pokemon API
