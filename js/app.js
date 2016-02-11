@@ -25,14 +25,16 @@ function pokedex() {
 }
 
 function convertWeight(weight) {
-	return (weight * 0.220462).toFixed(0);
+	if (!isNaN(weight)) return (weight * 0.220462).toFixed(0);
 }
 
 function convertHeight(height) {
-	let converted = (height * 0.328084);
-	let feet = Math.floor(converted);
-	let inches = ((converted - feet) * 3.93701).toFixed(0);
-	return feet + "'" + inches + '"';
+	if (!isNaN(height)) {
+		let converted = (height * 0.328084);
+		let feet = Math.floor(converted);
+		let inches = ((converted - feet) * 3.93701).toFixed(0);
+		return feet + "'" + inches + '"';
+	}
 }
 
 class PokemonStats extends React.Component {
