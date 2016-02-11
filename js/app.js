@@ -142,6 +142,10 @@ class HomePage extends React.Component {
 	}
 }
 
+function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 class Pokedex extends React.Component {
 	constructor(props) {
 		super(props);
@@ -186,9 +190,10 @@ class Pokemon extends React.Component {
 		} else {
 			pokemon.formatted_number = pokemon.entry_number;
 		}
+
 		return (
 			<li>
-				{pokemon.pokemon_species.name} | {pokemon.formatted_number}/151
+				{capitalize(pokemon.pokemon_species.name)} | {pokemon.formatted_number}/151
 			</li>
 		);
 	}
