@@ -134,7 +134,6 @@ class HomePage extends React.Component {
 		return (
 			<div>
 				<Nav />
-				<h1>PoKéMoN ReAcT</h1>
 				<div>
 					<div className="button">
 						<button onClick={this.catchPokemon}>Gotta Catch Em All</button>
@@ -165,7 +164,10 @@ class Pokedex extends React.Component {
 
 	render() {
 		return (
-			<PokemonName pokemon={this.state.pokemon} />
+			<div>
+				<Nav />
+				<PokemonName pokemon={this.state.pokemon} />
+			</div>
 		);
 	}
 }
@@ -218,11 +220,14 @@ class About extends React.Component {
 class Nav extends React.Component {
 	render() {
 		return (
-			<nav>
-				<Link to="/">Home</Link>
-				<Link to="/pokedex">Pokedex</Link>
-				<Link to="/about">About</Link>
-			</nav>
+			<div className="nav">
+				<h1>PoKéMoN ReAcT</h1>
+				<div className="link">
+					<Link to="/">Home</Link>
+					<Link to="/pokedex">Pokedex</Link>
+					<Link to="/about">About</Link>
+				</div>
+			</div>
 		);
 	}
 }

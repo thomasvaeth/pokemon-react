@@ -14,14 +14,37 @@ body {
 	width: 100%;
 	background-color: #2B2B2B;
 	color: #2B2B2B;
+	cursor: default;
 }
 
-h1 {
-	font-family: 'Pokemon Hollow', 'Open Sans', sans-serif;
-	margin: 0;
-	color: #EDF3FA;
-	font-size: 90px;
-	text-align: center;
+.nav {
+	margin-top: 15px;
+
+	h1 {
+		font-family: 'Pokemon Hollow', 'Open Sans', sans-serif;
+		margin: 0;
+		color: #EDF3FA;
+		font-size: 90px;
+		text-align: center;
+	}
+
+	.link {
+		display: flex;
+		justify-content: center;
+
+		a {
+			text-decoration: none;
+			margin: 0 15px 10px 15px;
+			color: #EDF3FA;
+
+			&:link,
+			&:hover,
+			&:active,
+			&:visited {
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 .button {
@@ -43,6 +66,7 @@ h1 {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	margin-bottom: 20px;
 
 	.card {
 		display: flex;
@@ -57,12 +81,17 @@ h1 {
 
 		.name {
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			align-items: center;
 			height: 50px;
 			width: 100%;
 
+			h2 {
+				margin-left: 15px;
+			}
+
 			p {
+				margin-right: 20px;
 				color: #E54545;
 			}
 		}
@@ -83,7 +112,7 @@ h1 {
 			height: 20px;
 			width: 80%;
 			padding: 5px 0;
-			margin: 3px 0 15px 0;
+			margin: 2px 0 15px 0;
 			background-color: #EDC351;
 			border-radius: 3px;
 			font-size: 14px;
@@ -120,6 +149,7 @@ h1 {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-bottom: 20px;
 
 	.pokemon {
 		display: flex;
@@ -132,10 +162,8 @@ h1 {
 		background-color: #EDF3FA;
 
 		h2 {
-			display: flex;
-			justify-content: center;
-			align-items: center;
 			font-family: 'Pokemon Hollow', 'Open Sans', sans-serif;
+			text-align: center;
 		}
 
 		&:hover {
