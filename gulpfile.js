@@ -6,10 +6,13 @@ var jade = require('gulp-jade');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
+var uglify = require('gulp-uglify');
 
 gulp.task('babel', function() {
 	return gulp.src('./development/js/app.js')
 	.pipe(babel({presets: ['react', 'es2015']}))
+	.pipe(uglify())
+	.pipe(rename('app.min.js'))
 	.pipe(gulp.dest('./js'));
 });
 
