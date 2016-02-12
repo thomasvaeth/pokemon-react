@@ -26,13 +26,26 @@ body {
 .nav {
 	margin-top: 15px;
 
-	h1 {
-		font-family: 'Pokemon Solid', 'Open Sans', sans-serif;
-		margin: 0;
-		color: $yellow;
-		text-shadow: -4px 0 $blue, 0 4px $blue, 4px 0 $blue, 0 -4px $blue;
-		font-size: 90px;
-		text-align: center;
+	.header {
+		a {
+			text-decoration: none;
+
+			&:link,
+			&:hover,
+			&:active,
+			&:visited {
+				text-decoration: none;
+			}
+
+			h1 {
+				font-family: 'Pokemon Solid', 'Open Sans', sans-serif;
+				margin: 0;
+				color: $yellow;
+				text-shadow: -4px 0 $blue, 0 4px $blue, 4px 0 $blue, 0 -4px $blue;
+				font-size: 90px;
+				text-align: center;
+			}
+		}
 	}
 
 	.link {
@@ -178,6 +191,10 @@ body {
 			background-color: $white;
 			border: 5px solid $yellow;
 			border-radius: 3px;
+
+			&:hover {
+				animation: pulse 1s infinite;
+			}
 		}
 	}
 }

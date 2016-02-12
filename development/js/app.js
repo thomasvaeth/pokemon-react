@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import {Link, browserHistory, IndexRoute, Router, Route} from 'react-router';
 
-const shuffle = (arr) => {
+const shuffle = arr => {
 	let m = arr.length, t, i;
 	while (m) {
 		i = Math.floor(Math.random() * m--);
@@ -235,7 +235,9 @@ class Nav extends React.Component {
 	render() {
 		return (
 			<div className="nav">
-				<h1>PoKéMoN ReAcT</h1>
+				<div className="header">
+					<Link to="/"><h1>PoKéMoN ReAcT</h1></Link>
+				</div>
 				<div className="link">
 					<Link to="/">Home</Link>
 					<Link to="/pokedex">Pokedex</Link>

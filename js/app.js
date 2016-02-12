@@ -455,9 +455,17 @@ var Nav = function (_React$Component9) {
 				'div',
 				{ className: 'nav' },
 				_react2.default.createElement(
-					'h1',
-					null,
-					'PoKéMoN ReAcT'
+					'div',
+					{ className: 'header' },
+					_react2.default.createElement(
+						_reactRouter.Link,
+						{ to: '/' },
+						_react2.default.createElement(
+							'h1',
+							null,
+							'PoKéMoN ReAcT'
+						)
+					)
 				),
 				_react2.default.createElement(
 					'div',
