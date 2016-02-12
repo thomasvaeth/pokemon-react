@@ -25,46 +25,43 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-// React-Router
-
-
-// Fisher–Yates shuffle algorithm
-function shuffle(arr) {
+var shuffle = function shuffle(arr) {
 	var m = arr.length,
-	    t,
-	    i;
-	// While there remain elements to shuffle…
+	    t = undefined,
+	    i = undefined;
 	while (m) {
-		// Pick a remaining element…
 		i = Math.floor(Math.random() * m--);
-		// And swap it with the current element.
 		t = arr[m];
 		arr[m] = arr[i];
 		arr[i] = t;
 	}
 	return arr;
-}
+};
 
-function pokedex() {
+var pokedex = function pokedex() {
 	var idArr = [];
 	for (var i = 1; i <= 151; i++) {
 		idArr.push(i);
 	}
 	return shuffle(idArr);
-}
+};
 
-function convertWeight(weight) {
+var convertWeight = function convertWeight(weight) {
 	if (!isNaN(weight)) return (weight * 0.220462).toFixed(0);
-}
+};
 
-function convertHeight(height) {
+var convertHeight = function convertHeight(height) {
 	if (!isNaN(height)) {
 		var converted = height * 0.328084;
 		var feet = Math.floor(converted);
 		var inches = ((converted - feet) * 3.93701).toFixed(0);
 		return feet + "'" + inches + '"';
 	}
-}
+};
+
+var capitalize = function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
+};
 
 var PokemonStats = function (_React$Component) {
 	_inherits(PokemonStats, _React$Component);
@@ -278,10 +275,6 @@ var HomePage = function (_React$Component4) {
 	return HomePage;
 }(_react2.default.Component);
 
-function capitalize(str) {
-	return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
 var Pokedex = function (_React$Component5) {
 	_inherits(Pokedex, _React$Component5);
 
@@ -368,11 +361,19 @@ var Pokemon = function (_React$Component7) {
 
 			return _react2.default.createElement(
 				'div',
-				{ className: 'pokemon' },
+				null,
 				_react2.default.createElement(
-					'h2',
-					null,
-					capitalize(pokemon.pokemon_species.name)
+					'a',
+					{ href: 'http://www.pokemon.com/us/pokedex/' + pokemon.pokemon_species.name, target: '_blank' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'pokemon' },
+						_react2.default.createElement(
+							'h2',
+							null,
+							capitalize(pokemon.pokemon_species.name)
+						)
+					)
 				)
 			);
 		}
@@ -421,11 +422,6 @@ var About = function (_React$Component8) {
 					_react2.default.createElement(
 						'div',
 						{ className: 'devicon' },
-						_react2.default.createElement(
-							'p',
-							null,
-							'And this is everything I used to build this:'
-						),
 						_react2.default.createElement('i', { className: 'devicon-react-original', title: 'React' }),
 						_react2.default.createElement('i', { className: 'devicon-html5-plain', title: 'HTML' }),
 						_react2.default.createElement('i', { className: 'devicon-sass-original', title: 'Sass' }),

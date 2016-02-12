@@ -1,18 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
+import {Link, browserHistory, IndexRoute, Router, Route} from 'react-router';
 
-// React-Router
-import { Link, browserHistory, IndexRoute, Router, Route } from 'react-router';
-
-// Fisher–Yates shuffle algorithm
-function shuffle(arr) {
-	var m = arr.length, t, i;
-	// While there remain elements to shuffle…
+const shuffle = (arr) => {
+	let m = arr.length, t, i;
 	while (m) {
-		// Pick a remaining element…
 		i = Math.floor(Math.random() * m--);
-		// And swap it with the current element.
 		t = arr[m];
 		arr[m] = arr[i];
 		arr[i] = t;
@@ -20,7 +14,7 @@ function shuffle(arr) {
 	return arr;
 }
 
-function pokedex() {
+const pokedex = () => {
 	let idArr = [];
 	for (let i = 1; i <= 151; i++) {
 		idArr.push(i);
@@ -28,17 +22,21 @@ function pokedex() {
 	return shuffle(idArr);
 }
 
-function convertWeight(weight) {
+const convertWeight = weight => {
 	if (!isNaN(weight)) return (weight * 0.220462).toFixed(0);
 }
 
-function convertHeight(height) {
+const convertHeight = height => {
 	if (!isNaN(height)) {
 		let converted = (height * 0.328084);
 		let feet = Math.floor(converted);
 		let inches = ((converted - feet) * 3.93701).toFixed(0);
 		return feet + "'" + inches + '"';
 	}
+}
+
+const capitalize = str => {
+	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 class PokemonStats extends React.Component {
@@ -148,10 +146,6 @@ class HomePage extends React.Component {
 	}
 }
 
-function capitalize(str) {
-	return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
 class Pokedex extends React.Component {
 	constructor(props) {
 		super(props);
@@ -200,13 +194,16 @@ class Pokemon extends React.Component {
 		}
 
 		return (
-			<div className="pokemon">
-				<h2>{capitalize(pokemon.pokemon_species.name)}</h2>
+			<div>
+				<a href={'http://www.pokemon.com/us/pokedex/' + pokemon.pokemon_species.name} target="_blank">
+					<div className="pokemon">
+						<h2>{capitalize(pokemon.pokemon_species.name)}</h2>
+					</div>
+				</a>
 			</div>
 		);
 	}
 }
-
 
 class About extends React.Component {
 	render() {
@@ -219,7 +216,6 @@ class About extends React.Component {
 					<h2>I am Thomas Vaeth and I am a web developer in Seattle.</h2>
 					<p>Why did I sell all of my Pokémon cards on eBay?</p>
 					<div className="devicon">
-						<p>And this is everything I used to build this:</p>
 						<i className="devicon-react-original" title="React"></i>
 						<i className="devicon-html5-plain" title="HTML"></i>
 						<i className="devicon-sass-original" title="Sass"></i>
