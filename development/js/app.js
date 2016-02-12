@@ -128,7 +128,7 @@ class HomePage extends React.Component {
 	}
 
 	catchPokemon() {
-		let pokemon = pokedex().slice(0, 8);
+		let pokemon = pokedex().slice(0, 10);
 		this.setState({pokemonIds: pokemon});
 	}
 

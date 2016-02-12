@@ -245,7 +245,7 @@ var HomePage = function (_React$Component4) {
 	_createClass(HomePage, [{
 		key: 'catchPokemon',
 		value: function catchPokemon() {
-			var pokemon = pokedex().slice(0, 8);
+			var pokemon = pokedex().slice(0, 10);
 			this.setState({ pokemonIds: pokemon });
 		}
 	}, {
