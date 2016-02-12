@@ -12,5 +12,5 @@ Pokemon React is something I decided to build after seeing the Pokemon API came 
 * JavaScript
 * jQuery
 * Gulp
-  - gulp, gulp-jade, gulp-minify-css, gulp-rename, gulp-sass
+  - gulp, babel-preset-es2015, babel-preset-react, gulp-babel, gulp-jade, gulp-minify-css, gulp-rename, gulp-sass
 * Pokemon API

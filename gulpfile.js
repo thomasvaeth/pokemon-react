@@ -1,10 +1,17 @@
 'use strict';
 
 var gulp = require('gulp');
+var babel = require('gulp-babel');
 var jade = require('gulp-jade');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
+
+gulp.task('babel', function() {
+	return gulp.src('./development/js/app.js')
+	.pipe(babel({presets: ['react', 'es2015']}))
+	.pipe(gulp.dest('./js'));
+});
 
 gulp.task('jade', function() {
 	return gulp.src('./development/index.jade')
@@ -20,9 +27,10 @@ gulp.task('sass', function() {
 	.pipe(gulp.dest('./css'));
 });
 
-gulp.task('build', ['jade', 'sass']);
+gulp.task('build', ['babel', 'jade', 'sass']);
 
 gulp.task('watch', function() {
+	gulp.watch('./development/js/**/*.js', ['babel']);
 	gulp.watch('./development/**/*.jade', ['jade']);
 	gulp.watch('./development/scss/**/*.scss', ['sass']);
 });
