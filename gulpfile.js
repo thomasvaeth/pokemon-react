@@ -1,14 +1,14 @@
 'use strict';
 
 var gulp = require('gulp');
+var babelify = require('babelify');
 var browserify = require('browserify');
 var jade = require('gulp-jade');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
-var uglify = require('gulp-uglify');
-var babelify = require('babelify');
 var source = require('vinyl-source-stream');
+var uglify = require('gulp-uglify');
 
 gulp.task('babel', function() {
 	return browserify('./development/js/app.js')
