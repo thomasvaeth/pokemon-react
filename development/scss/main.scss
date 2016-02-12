@@ -55,8 +55,7 @@ body {
 		margin-bottom: 10px;
 		border: 2px solid #EDF3FA;
 		border-radius: 3px;
-		background-color: rgba(0, 0, 0, 0);
-		color: #EDF3FA;
+		background-color: #EDF3FA;
 		outline: 0;
 	}
 }
@@ -171,5 +170,34 @@ body {
 				font-family: 'Pokemon Solid', 'Open Sans', sans-serif;
 			}
 		}
+	}
+}
+
+.me {
+	max-width: 700px;
+	margin: 0 auto;
+
+	.pic {
+		max-width: 500px;
+		margin: 0 auto;
+
+		img {
+			height: auto;
+			width: 100%;
+			margin-top: 20px;
+			text-align: center;
+			border-radius: 5px;
+		}
+	}
+
+	h2 {
+		margin: 10px 0 0 0;
+		text-align: center;
+		color: #EDF3FA;
+	}
+
+	p {
+		text-align: center;
+		color: #EDF3FA;
 	}
 }

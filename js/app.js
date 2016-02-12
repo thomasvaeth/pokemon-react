@@ -211,7 +211,13 @@ class About extends React.Component {
 		return (
 			<div>
 				<Nav />
-				<h1>Ash Ketchum</h1>
+				<div className="me">
+					<div className="pic">
+						<a href="http://thomasvaeth.com" target="_blank"><img src="images/me-bw.jpeg" /></a>
+					</div>
+					<h2>I am Thomas Vaeth and I am a web developer in Seattle.</h2>
+					<p>Why did I sell all of my Pokémon cards on eBay?</p>
+				</div>
 			</div>
 		);
 	}
