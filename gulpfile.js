@@ -19,7 +19,7 @@ gulp.task('babel', function() {
 });
 
 gulp.task('minifyScripts', ['babel'], function() {
-	return gulp.src('./js/app.js')
+	return gulp.src('./public/js/app.js')
 	.pipe(uglify())
 	.pipe(rename('app.min.js'))
 	.pipe(gulp.dest('./public/js'));
