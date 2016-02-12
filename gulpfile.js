@@ -1,16 +1,25 @@
 'use strict';
 
 var gulp = require('gulp');
-var babel = require('gulp-babel');
+var browserify = require('browserify');
 var jade = require('gulp-jade');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
+var babelify = require('babelify');
+var source = require('vinyl-source-stream');
 
 gulp.task('babel', function() {
-	return gulp.src('./development/js/app.js')
-	.pipe(babel({presets: ['react', 'es2015']}))
+	return browserify('./development/js/app.js')
+	.transform('babelify', {presets: ['react', 'es2015']})
+	.bundle()
+	.pipe(source('app.js'))
+	.pipe(gulp.dest('./js'));
+});
+
+gulp.task('minifyScripts', ['babel'], function() {
+	return gulp.src('./js/app.js')
 	.pipe(uglify())
 	.pipe(rename('app.min.js'))
 	.pipe(gulp.dest('./js'));
@@ -30,10 +39,10 @@ gulp.task('sass', function() {
 	.pipe(gulp.dest('./css'));
 });
 
-gulp.task('build', ['babel', 'jade', 'sass']);
+gulp.task('build', ['minifyScripts', 'jade', 'sass']);
 
 gulp.task('watch', function() {
-	gulp.watch('./development/js/**/*.js', ['babel']);
+	gulp.watch('./development/js/**/*.js', ['minifyScripts']);
 	gulp.watch('./development/**/*.jade', ['jade']);
 	gulp.watch('./development/scss/**/*.scss', ['sass']);
 });

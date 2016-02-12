@@ -1,5 +1,8 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 // React-Router
-const {browserHistory, Router, Route, IndexRoute, Link} = window.ReactRouter;
+import { Link, browserHistory, IndexRoute, Router, Route } from 'react-router';
 
 // Fisher–Yates shuffle algorithm
 function shuffle(arr) {
