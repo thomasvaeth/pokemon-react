@@ -1,3 +1,9 @@
+$blue: #425878;
+$yellow: #EDC351;
+$red: #E54545;
+$white: #EDF3FA;
+$black: #2B2B2B;
+
 @font-face {
 	font-family: 'Pokemon Hollow'; 
 	src: url('/fonts/Pokemon-Hollow.ttf');
@@ -12,8 +18,8 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	min-height: 100vh;
 	width: 100%;
-	background-color: #2B2B2B;
-	color: #2B2B2B;
+	background-color: $black;
+	color: $black;
 	cursor: default;
 }
 
@@ -23,8 +29,8 @@ body {
 	h1 {
 		font-family: 'Pokemon Solid', 'Open Sans', sans-serif;
 		margin: 0;
-		color: #EDC351;
-		text-shadow: -4px 0 #425878, 0 4px #425878, 4px 0 #425878, 0 -4px #425878;
+		color: $yellow;
+		text-shadow: -4px 0 $blue, 0 4px $blue, 4px 0 $blue, 0 -4px $blue;
 		font-size: 90px;
 		text-align: center;
 	}
@@ -36,7 +42,7 @@ body {
 		a {
 			text-decoration: none;
 			margin: 0 15px 10px 15px;
-			color: #EDF3FA;
+			color: $white;
 
 			&:link,
 			&:hover,
@@ -54,9 +60,9 @@ body {
 	button {
 		padding: 6px 18px 9px 18px;
 		margin-bottom: 10px;
-		border: 2px solid #EDF3FA;
+		border: 2px solid $white;
 		border-radius: 3px;
-		background-color: #EDF3FA;
+		background-color: $white;
 		outline: 0;
 	}
 }
@@ -75,9 +81,9 @@ body {
 		height: 330px;
 		width: 260px;
 		margin: 5px;
-		border: 8px solid #EDC351;
+		border: 8px solid $yellow;
 		border-radius: 10px;
-		background-color: #EDF3FA;
+		background-color: $white;
 
 		.name {
 			display: flex;
@@ -92,7 +98,7 @@ body {
 
 			p {
 				margin-right: 20px;
-				color: #E54545;
+				color: $red;
 			}
 		}
 
@@ -102,7 +108,7 @@ body {
 			align-items: center;
 			height: 150px;
 			width: 90%;
-			background-color: #E54545;
+			background-color: $red;
 			border-radius: 5px;
 		}
 
@@ -113,7 +119,7 @@ body {
 			width: 80%;
 			padding: 5px 0;
 			margin: 2px 0 15px 0;
-			background-color: #EDC351;
+			background-color: $yellow;
 			border-radius: 3px;
 			font-size: 14px;
 		}
@@ -158,8 +164,8 @@ body {
 		height: 100px;
 		width: 220px;
 		margin: 5px;
-		border: 3px solid #EDC351;
-		background-color: #EDF3FA;
+		border: 3px solid $yellow;
+		background-color: $white;
 
 		h2 {
 			font-family: 'Pokemon Hollow', 'Open Sans', sans-serif;
@@ -178,7 +184,7 @@ body {
 	max-width: 700px;
 	margin: 0 auto;
 	text-align: center;
-	color: #EDF3FA;
+	color: $white;
 
 	.pic {
 		max-width: 500px;
