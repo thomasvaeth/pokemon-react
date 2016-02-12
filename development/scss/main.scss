@@ -21,9 +21,10 @@ body {
 	margin-top: 15px;
 
 	h1 {
-		font-family: 'Pokemon Hollow', 'Open Sans', sans-serif;
+		font-family: 'Pokemon Solid', 'Open Sans', sans-serif;
 		margin: 0;
-		color: #EDF3FA;
+		color: #EDC351;
+		text-shadow: -4px 0 #425878, 0 4px #425878, 4px 0 #425878, 0 -4px #425878;
 		font-size: 90px;
 		text-align: center;
 	}
@@ -201,11 +202,43 @@ body {
 	}
 
 	.devicon {
-		margin-top: 5px;
+		margin: 5px 0 25px 0;
 
 		i {
 			margin: 0 5px 0 5px;
 			font-size: 40px;
+		}
+
+		.devicon-react-original:hover {
+			color: #61DAFB;
+		}
+
+		.devicon-html5-plain:hover {
+			color: #E54D26;
+		}
+
+		.devicon-sass-original:hover {
+			color: #CC6699;
+		}
+
+		.devicon-css3-plain:hover {
+			color: #3D8FC6;
+		}
+
+		.devicon-javascript-plain:hover {
+			color: #F0DB4F;
+		}
+
+		.devicon-jquery-plain:hover {
+			color: #0769AD;
+		}
+
+		.devicon-gulp-plain:hover {
+			color: #EB4A4B;
+		}
+
+		.devicon-github-plain:hover {
+			color: #000000;
 		}
 	}
 }
