@@ -423,6 +423,7 @@ var About = function (_React$Component8) {
 						'div',
 						{ className: 'devicon' },
 						_react2.default.createElement('i', { className: 'devicon-react-original', title: 'React' }),
+						_react2.default.createElement('i', { className: 'devicon-nodejs-plain', title: 'Node.js' }),
 						_react2.default.createElement('i', { className: 'devicon-html5-plain', title: 'HTML' }),
 						_react2.default.createElement('i', { className: 'devicon-sass-original', title: 'Sass' }),
 						_react2.default.createElement('i', { className: 'devicon-css3-plain', title: 'CSS' }),

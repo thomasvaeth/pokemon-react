@@ -217,6 +217,7 @@ class About extends React.Component {
 					<p>Why did I sell all of my Pokémon cards on eBay?</p>
 					<div className="devicon">
 						<i className="devicon-react-original" title="React"></i>
+						<i className="devicon-nodejs-plain" title="Node.js"></i>
 						<i className="devicon-html5-plain" title="HTML"></i>
 						<i className="devicon-sass-original" title="Sass"></i>
 						<i className="devicon-css3-plain" title="CSS"></i>
