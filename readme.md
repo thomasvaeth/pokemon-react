@@ -7,7 +7,7 @@ Pokemon React is something I decided to build after seeing the Pokemon API came 
   - react-router
 * ES2015/ES6
 * Jade/HTML
-* Sass
+* Sass/CSS
   - Flexbox
 * JavaScript
 * jQuery

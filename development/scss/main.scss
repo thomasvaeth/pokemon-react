@@ -176,6 +176,8 @@ body {
 .me {
 	max-width: 700px;
 	margin: 0 auto;
+	text-align: center;
+	color: #EDF3FA;
 
 	.pic {
 		max-width: 500px;
@@ -191,13 +193,19 @@ body {
 	}
 
 	h2 {
-		margin: 10px 0 0 0;
-		text-align: center;
-		color: #EDF3FA;
+		margin: 10px 0 10px 0;
 	}
 
 	p {
-		text-align: center;
-		color: #EDF3FA;
+		margin: 10px 0 10px 0;
+	}
+
+	.devicon {
+		margin-top: 5px;
+
+		i {
+			margin: 0 5px 0 5px;
+			font-size: 40px;
+		}
 	}
 }

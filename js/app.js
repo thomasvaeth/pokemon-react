@@ -217,6 +217,17 @@ class About extends React.Component {
 					</div>
 					<h2>I am Thomas Vaeth and I am a web developer in Seattle.</h2>
 					<p>Why did I sell all of my Pokémon cards on eBay?</p>
+					<div className="devicon">
+						<p>And this is everything I used to build this:</p>
+						<i className="devicon-react-original" title="React"></i>
+						<i className="devicon-html5-plain" title="HTML"></i>
+						<i className="devicon-sass-original" title="Sass"></i>
+						<i className="devicon-css3-plain" title="CSS"></i>
+						<i className="devicon-javascript-plain" title="JavaScript"></i>
+						<i className="devicon-jquery-plain" title="jQuery"></i>
+						<i className="devicon-gulp-plain" title="Gulp"></i>
+						<i className="devicon-github-plain" title="GitHub"></i>
+					</div>
 				</div>
 			</div>
 		);
