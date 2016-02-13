@@ -241,7 +241,7 @@ class Nav extends React.Component {
 				</div>
 				<div className="link">
 					<Link to="/">Home</Link>
-					<Link to="/pokedex">Pokedex</Link>
+					<Link to="/pokedex">Pokédex</Link>
 					<Link to="/about">About</Link>
 				</div>
 				{this.props.children}

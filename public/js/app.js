@@ -479,7 +479,7 @@ var Nav = function (_React$Component9) {
 					_react2.default.createElement(
 						_reactRouter.Link,
 						{ to: '/pokedex' },
-						'Pokedex'
+						'Pokédex'
 					),
 					_react2.default.createElement(
 						_reactRouter.Link,
