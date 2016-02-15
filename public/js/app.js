@@ -59,10 +59,6 @@ var convertHeight = function convertHeight(height) {
 	}
 };
 
-var capitalize = function capitalize(str) {
-	return str.charAt(0).toUpperCase() + str.slice(1);
-};
-
 var PokemonStats = function (_React$Component) {
 	_inherits(PokemonStats, _React$Component);
 
@@ -76,7 +72,6 @@ var PokemonStats = function (_React$Component) {
 		key: 'render',
 		value: function render() {
 			var pokemon = this.props.pokemon;
-			var sprite = this.props.sprite;
 			var converted_weight = convertWeight(pokemon.weight);
 			if (pokemon.national_id < 10) {
 				pokemon.formatted_id = '00' + pokemon.national_id;
@@ -107,7 +102,7 @@ var PokemonStats = function (_React$Component) {
 				_react2.default.createElement(
 					'div',
 					{ className: 'image' },
-					_react2.default.createElement('img', { src: sprite })
+					_react2.default.createElement('img', { src: pokemon.sprite })
 				),
 				_react2.default.createElement(
 					'div',
@@ -179,24 +174,14 @@ var PokemonCard = function (_React$Component2) {
 		value: function getPokemon() {
 			var _this3 = this;
 
-			_jquery2.default.get('http://pokeapi.co/api/v1/pokemon/' + this.props.pokemonId).done(function (pokemon) {
+			_jquery2.default.get('/api/pokemon/' + this.props.pokemonId).done(function (pokemon) {
 				_this3.setState({ pokemon: pokemon });
-				_this3.getSprite(pokemon);
-			});
-		}
-	}, {
-		key: 'getSprite',
-		value: function getSprite(pokemon) {
-			var _this4 = this;
-
-			_jquery2.default.get('http://pokeapi.co/' + pokemon.sprites[0].resource_uri).done(function (sprite) {
-				_this4.setState({ sprite: 'http://pokeapi.co/' + sprite.image });
 			});
 		}
 	}, {
 		key: 'render',
 		value: function render() {
-			return _react2.default.createElement(PokemonStats, { pokemon: this.state.pokemon, sprite: this.state.sprite });
+			return _react2.default.createElement(PokemonStats, { pokemon: this.state.pokemon });
 		}
 	}]);
 
@@ -235,11 +220,11 @@ var HomePage = function (_React$Component4) {
 	function HomePage(props) {
 		_classCallCheck(this, HomePage);
 
-		var _this6 = _possibleConstructorReturn(this, Object.getPrototypeOf(HomePage).call(this, props));
+		var _this5 = _possibleConstructorReturn(this, Object.getPrototypeOf(HomePage).call(this, props));
 
-		_this6.catchPokemon = _this6.catchPokemon.bind(_this6);
-		_this6.state = { pokemonIds: [1, 4, 7] };
-		return _this6;
+		_this5.catchPokemon = _this5.catchPokemon.bind(_this5);
+		_this5.state = { pokemonIds: [1] };
+		return _this5;
 	}
 
 	_createClass(HomePage, [{
@@ -281,20 +266,20 @@ var Pokedex = function (_React$Component5) {
 	function Pokedex(props) {
 		_classCallCheck(this, Pokedex);
 
-		var _this7 = _possibleConstructorReturn(this, Object.getPrototypeOf(Pokedex).call(this, props));
+		var _this6 = _possibleConstructorReturn(this, Object.getPrototypeOf(Pokedex).call(this, props));
 
-		_this7.state = { pokemon: [] };
-		_this7.getPokemon();
-		return _this7;
+		_this6.state = { pokemon: [] };
+		_this6.getPokemon();
+		return _this6;
 	}
 
 	_createClass(Pokedex, [{
 		key: 'getPokemon',
 		value: function getPokemon() {
-			var _this8 = this;
+			var _this7 = this;
 
-			_jquery2.default.get('http://pokeapi.co/api/v2/pokedex/2').done(function (pokemon) {
-				_this8.setState({ pokemon: pokemon.pokemon_entries });
+			_jquery2.default.get('/api/pokemon').done(function (pokemon) {
+				_this7.setState({ pokemon: pokemon });
 			});
 		}
 	}, {
@@ -324,7 +309,7 @@ var PokemonName = function (_React$Component6) {
 		key: 'render',
 		value: function render() {
 			var pokemon = this.props.pokemon.map(function (pokemonId) {
-				return _react2.default.createElement(Pokemon, { key: pokemonId.entry_number, pokemon: pokemonId });
+				return _react2.default.createElement(Pokemon, { key: pokemonId._id, pokemon: pokemonId });
 			});
 
 			return _react2.default.createElement(
@@ -351,12 +336,12 @@ var Pokemon = function (_React$Component7) {
 		key: 'render',
 		value: function render() {
 			var pokemon = this.props.pokemon;
-			if (pokemon.entry_number < 10) {
-				pokemon.formatted_number = '00' + pokemon.entry_number;
-			} else if (pokemon.entry_number < 100) {
-				pokemon.formatted_number = '0' + pokemon.entry_number;
+			if (pokemon.national_id < 10) {
+				pokemon.formatted_number = '00' + pokemon.national_id;
+			} else if (pokemon.national_id < 100) {
+				pokemon.formatted_number = '0' + pokemon.national_id;
 			} else {
-				pokemon.formatted_number = pokemon.entry_number;
+				pokemon.formatted_number = pokemon.national_id;
 			}
 
 			return _react2.default.createElement(
@@ -364,14 +349,14 @@ var Pokemon = function (_React$Component7) {
 				null,
 				_react2.default.createElement(
 					'a',
-					{ href: 'http://www.pokemon.com/us/pokedex/' + pokemon.pokemon_species.name, target: '_blank' },
+					{ href: 'http://www.pokemon.com/us/pokedex/' + pokemon.name, target: '_blank' },
 					_react2.default.createElement(
 						'div',
 						{ className: 'pokemon' },
 						_react2.default.createElement(
 							'h2',
 							null,
-							capitalize(pokemon.pokemon_species.name)
+							pokemon.name
 						)
 					)
 				)

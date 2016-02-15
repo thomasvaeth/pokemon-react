@@ -35,14 +35,9 @@ const convertHeight = height => {
 	}
 }
 
-const capitalize = str => {
-	return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
 class PokemonStats extends React.Component {
 	render() {
 		let pokemon = this.props.pokemon;
-		let sprite = this.props.sprite;
 		let converted_weight = convertWeight(pokemon.weight);
 		if (pokemon.national_id < 10) {
 			pokemon.formatted_id = '00' + pokemon.national_id;
@@ -59,7 +54,7 @@ class PokemonStats extends React.Component {
 					<p>{pokemon.hp}HP</p>
 				</div>
 				<div className="image">
-					<img src={sprite} />
+					<img src={pokemon.sprite} />
 				</div>
 				<div className="stats">
 					Length: {convertHeight(pokemon.height)},
@@ -88,21 +83,14 @@ class PokemonCard extends React.Component {
 	}
 
 	getPokemon() {
-		$.get(`http://pokeapi.co/api/v1/pokemon/${this.props.pokemonId}`).done(pokemon => {
+		$.get(`/api/pokemon/${this.props.pokemonId}`).done(pokemon => {
 			this.setState({pokemon});
-			this.getSprite(pokemon);
-		});
-	}
-
-	getSprite(pokemon) {
-		$.get(`http://pokeapi.co/${pokemon.sprites[0].resource_uri}`).done(sprite => {
-			this.setState({sprite: `http://pokeapi.co/${sprite.image}`});
 		});
 	}
 
 	render() {
 		return (
-			<PokemonStats pokemon={this.state.pokemon} sprite={this.state.sprite} />
+			<PokemonStats pokemon={this.state.pokemon} />
 		);
 	}
 }
@@ -124,7 +112,7 @@ class HomePage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.catchPokemon = this.catchPokemon.bind(this);
-		this.state = {pokemonIds: [1, 4, 7]};
+		this.state = {pokemonIds: [1]};
 	}
 
 	catchPokemon() {
@@ -154,8 +142,8 @@ class Pokedex extends React.Component {
 	}
 
 	getPokemon() {
-		$.get('http://pokeapi.co/api/v2/pokedex/2').done(pokemon => {
-			this.setState({pokemon: pokemon.pokemon_entries});
+		$.get('/api/pokemon').done(pokemon => {
+			this.setState({pokemon});
 		});
 	}
 
@@ -171,7 +159,7 @@ class Pokedex extends React.Component {
 class PokemonName extends React.Component {
 	render() {
 		let pokemon = this.props.pokemon.map(pokemonId => {
-			return <Pokemon key={pokemonId.entry_number} pokemon={pokemonId} />
+			return <Pokemon key={pokemonId._id} pokemon={pokemonId} />
 		});
 
 		return (
@@ -185,19 +173,19 @@ class PokemonName extends React.Component {
 class Pokemon extends React.Component {
 	render() {
 		let pokemon = this.props.pokemon;
-		if (pokemon.entry_number < 10) {
-			pokemon.formatted_number = '00' + pokemon.entry_number;
-		} else if (pokemon.entry_number < 100) {
-			pokemon.formatted_number = '0' + pokemon.entry_number;
+		if (pokemon.national_id < 10) {
+			pokemon.formatted_number = '00' + pokemon.national_id;
+		} else if (pokemon.national_id < 100) {
+			pokemon.formatted_number = '0' + pokemon.national_id;
 		} else {
-			pokemon.formatted_number = pokemon.entry_number;
+			pokemon.formatted_number = pokemon.national_id;
 		}
 
 		return (
 			<div>
-				<a href={'http://www.pokemon.com/us/pokedex/' + pokemon.pokemon_species.name} target="_blank">
+				<a href={'http://www.pokemon.com/us/pokedex/' + pokemon.name} target="_blank">
 					<div className="pokemon">
-						<h2>{capitalize(pokemon.pokemon_species.name)}</h2>
+						<h2>{pokemon.name}</h2>
 					</div>
 				</a>
 			</div>
