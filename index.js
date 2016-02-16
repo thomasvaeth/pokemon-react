@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 var Pokemon = require('./models/pokemon');
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/pokemon');
-app.use('/api/pokemon', require('./controllers/pokemon'));
+app.use('/api/pokemon', require('./controllers/pokemons'));
 
 app.get('/*', function(req, res) {
 	res.sendFile(path.join(__dirname, 'public/index.html'));

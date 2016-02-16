@@ -80,7 +80,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	margin-bottom: 20px;
+	width: 90%;
+	margin: 0 auto 20px auto;
 
 	.card {
 		display: flex;
