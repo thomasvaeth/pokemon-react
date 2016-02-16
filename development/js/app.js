@@ -98,7 +98,7 @@ class PokemonCard extends React.Component {
 class CardsBinder extends React.Component {
 	render() {
 		let cards = this.props.pokemonIds.map(pokemonId => {
-			return <PokemonCard key={pokemonId} pokemonId={pokemonId} />;
+			return <PokemonCard key={pokemonId.national_id} pokemonId={pokemonId} />;
 		});
 		return (
 			<div className="container">
@@ -159,7 +159,7 @@ class Pokedex extends React.Component {
 class PokemonName extends React.Component {
 	render() {
 		let pokemon = this.props.pokemon.map(pokemonId => {
-			return <Pokemon key={pokemonId} pokemon={pokemonId} />
+			return <Pokemon key={pokemonId.national_id} pokemon={pokemonId} />
 		});
 
 		return (
