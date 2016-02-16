@@ -201,7 +201,7 @@ var CardsBinder = function (_React$Component3) {
 		key: 'render',
 		value: function render() {
 			var cards = this.props.pokemonIds.map(function (pokemonId) {
-				return _react2.default.createElement(PokemonCard, { key: pokemonId.national_id, pokemonId: pokemonId });
+				return _react2.default.createElement(PokemonCard, { key: pokemonId, pokemonId: pokemonId });
 			});
 			return _react2.default.createElement(
 				'div',

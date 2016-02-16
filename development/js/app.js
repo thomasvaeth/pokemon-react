@@ -98,7 +98,7 @@ class PokemonCard extends React.Component {
 class CardsBinder extends React.Component {
 	render() {
 		let cards = this.props.pokemonIds.map(pokemonId => {
-			return <PokemonCard key={pokemonId.national_id} pokemonId={pokemonId} />;
+			return <PokemonCard key={pokemonId} pokemonId={pokemonId} />;
 		});
 		return (
 			<div className="container">
