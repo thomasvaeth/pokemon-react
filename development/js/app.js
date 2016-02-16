@@ -112,7 +112,7 @@ class HomePage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.catchPokemon = this.catchPokemon.bind(this);
-		this.state = {pokemonIds: [1]};
+		this.state = {pokemonIds: [1, 4, 7]};
 	}
 
 	catchPokemon() {
@@ -159,7 +159,7 @@ class Pokedex extends React.Component {
 class PokemonName extends React.Component {
 	render() {
 		let pokemon = this.props.pokemon.map(pokemonId => {
-			return <Pokemon key={pokemonId._id} pokemon={pokemonId} />
+			return <Pokemon key={pokemonId} pokemon={pokemonId} />
 		});
 
 		return (

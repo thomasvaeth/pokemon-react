@@ -22,12 +22,6 @@ router.route('/:id')
       if (err) return res.status(500).send(err);
       res.send(pokemon);
     });
-  })
-  .put(function(req, res) {
-    Pokemon.findByIdAndUpdate(req.params.id, req.body, function(err) {
-      if (err) return res.status(500).send(err);
-      res.send({'message': 'success'});
-    });
   });
 
 module.exports = router;

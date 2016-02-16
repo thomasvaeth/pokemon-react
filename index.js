@@ -10,6 +10,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
+var Pokemon = require('./models/pokemon');
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/pokemon');
 app.use('/api/pokemon', require('./controllers/pokemon'));
 

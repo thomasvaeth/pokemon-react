@@ -223,7 +223,7 @@ var HomePage = function (_React$Component4) {
 		var _this5 = _possibleConstructorReturn(this, Object.getPrototypeOf(HomePage).call(this, props));
 
 		_this5.catchPokemon = _this5.catchPokemon.bind(_this5);
-		_this5.state = { pokemonIds: [1] };
+		_this5.state = { pokemonIds: [1, 4, 7] };
 		return _this5;
 	}
 
@@ -309,7 +309,7 @@ var PokemonName = function (_React$Component6) {
 		key: 'render',
 		value: function render() {
 			var pokemon = this.props.pokemon.map(function (pokemonId) {
-				return _react2.default.createElement(Pokemon, { key: pokemonId._id, pokemon: pokemonId });
+				return _react2.default.createElement(Pokemon, { key: pokemonId, pokemon: pokemonId });
 			});
 
 			return _react2.default.createElement(
