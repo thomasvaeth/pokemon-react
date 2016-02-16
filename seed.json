@@ -1,5 +1,5 @@
 {
-	"undefined": "mongodb://heroku_9dphllmj:tdn4jcgih8d01r0e1jjfm1a8vo@ds011308.mongolab.com:11308/heroku_9dphllmj",
-	"dev": "mongodb://heroku_9dphllmj:tdn4jcgih8d01r0e1jjfm1a8vo@ds011308.mongolab.com:11308/heroku_9dphllmj",
-	"prod": "mongodb://heroku_9dphllmj:tdn4jcgih8d01r0e1jjfm1a8vo@ds011308.mongolab.com:11308/heroku_9dphllmj"
+	"undefined": "localhost/LOCAL_DB_NAME",
+	"dev": "localhost/DEV_DB_NAME",
+	"prod": "localhost/PROD_DB_NAME"
 }

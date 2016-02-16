@@ -1,4 +1,4 @@
-# [Pokemon React](http://codepen.io/thomasvaeth/full/obJZqb/)
+# [Pokemon React](http://pokemon-react.herokuapp.com/)
 ### About
 Pokemon React is something I decided to build after seeing the Pokemon API came out with V2. It was built to get comfortable writing React is ES2015, using Sass, and putting everything in a [flexbox](http://flexboxfroggy.com/).
 
@@ -7,6 +7,7 @@ Pokemon React is something I decided to build after seeing the Pokemon API came 
   - react-router
 * ES2015/ES6
 * Express/Node.js
+* Mongoose for MongoDB
 * Jade/HTML
 * Sass/CSS
   - flexbox
@@ -16,6 +17,10 @@ Pokemon React is something I decided to build after seeing the Pokemon API came 
   - gulp, babel-preset-es2015, babel-preset-react, babelify, browserify, gulp-jade, gulp-minify-css, gulp-rename, gulp-sass, gulp-uglify, vinyl-source-stream
 * Animate.CSS
 * Pokemon API
+
+### Installation
+* ````npm install````
+  - Node modules include body-parser, express, jquery, mongoose, node-mongo-seeds, react, react-dom, react-router
 
 ### Screenshots
 ![Home](https://github.com/thomasvaeth/pokemon-react/blob/master/screenshots/screenshot-1.png "Desktop screenshot")

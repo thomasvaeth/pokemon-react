@@ -206,6 +206,7 @@ class About extends React.Component {
 					<div className="devicon">
 						<i className="devicon-react-original" title="React"></i>
 						<i className="devicon-nodejs-plain" title="Node.js"></i>
+						<i class="devicon-mongodb-plain" title="MongoDB"></i>
 						<i className="devicon-html5-plain" title="HTML"></i>
 						<i className="devicon-sass-original" title="Sass"></i>
 						<i className="devicon-css3-plain" title="CSS"></i>

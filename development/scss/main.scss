@@ -1,13 +1,5 @@
-$blue: #425878;
-$yellow: #EDC351;
-$red: #E54545;
-$white: #EDF3FA;
-$black: #2B2B2B;
-
-@font-face {
-	font-family: 'Pokemon Solid'; 
-	src: url('../fonts/Pokemon-Solid.ttf');
-}
+@import '_colors';
+@import '_fonts';
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -236,6 +228,10 @@ body {
 
 		.devicon-nodejs-plain:hover {
   		color: #83CD29;
+		}
+
+		.devicon-mongodb-plain:hover {
+			color: #4FAA41;
 		}
 
 		.devicon-html5-plain:hover {
