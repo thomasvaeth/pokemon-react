@@ -409,14 +409,12 @@ var About = function (_React$Component8) {
 						{ className: 'devicon' },
 						_react2.default.createElement('i', { className: 'devicon-react-original', title: 'React' }),
 						_react2.default.createElement('i', { className: 'devicon-nodejs-plain', title: 'Node.js' }),
-						_react2.default.createElement('i', { className: 'devicon-mongodb-plain', title: 'MongoDB' }),
 						_react2.default.createElement('i', { className: 'devicon-html5-plain', title: 'HTML' }),
 						_react2.default.createElement('i', { className: 'devicon-sass-original', title: 'Sass' }),
-						_react2.default.createElement('i', { className: 'devicon-css3-plain', title: 'CSS' }),
 						_react2.default.createElement('i', { className: 'devicon-javascript-plain', title: 'JavaScript' }),
 						_react2.default.createElement('i', { className: 'devicon-jquery-plain', title: 'jQuery' }),
-						_react2.default.createElement('i', { className: 'devicon-gulp-plain', title: 'Gulp' }),
-						_react2.default.createElement('i', { className: 'devicon-github-plain', title: 'GitHub' })
+						_react2.default.createElement('i', { className: 'devicon-mongodb-plain', title: 'MongoDB' }),
+						_react2.default.createElement('i', { className: 'devicon-gulp-plain', title: 'Gulp' })
 					)
 				)
 			);
