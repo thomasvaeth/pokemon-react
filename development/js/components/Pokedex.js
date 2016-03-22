@@ -2,7 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import PokemonName from './PokemonName';
 
-class Pokedex extends React.Component {
+export default class Pokedex extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {pokemon: []};
@@ -23,5 +23,3 @@ class Pokedex extends React.Component {
 		);
 	}
 }
-
-export default Pokedex;

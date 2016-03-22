@@ -13,7 +13,7 @@ const convertHeight = height => {
 	}
 }
 
-class PokemonStats extends React.Component {
+export default class PokemonStats extends React.Component {
 	render() {
 		let pokemon = this.props.pokemon;
 		let converted_weight = convertWeight(pokemon.weight);
@@ -52,5 +52,3 @@ class PokemonStats extends React.Component {
 		);
 	}
 }
-
-export default PokemonStats;

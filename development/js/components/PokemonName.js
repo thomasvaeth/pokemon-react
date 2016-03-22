@@ -1,7 +1,7 @@
 import React from 'react';
 import Pokemon from './Pokemon';
 
-class PokemonName extends React.Component {
+export default class PokemonName extends React.Component {
 	render() {
 		let pokemon = this.props.pokemon.map(pokemonId => {
 			return <Pokemon key={pokemonId.national_id} pokemon={pokemonId} />
@@ -14,5 +14,3 @@ class PokemonName extends React.Component {
 		);
 	}
 }
-
-export default PokemonName;

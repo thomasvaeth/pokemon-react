@@ -5,7 +5,7 @@ import Pokedex from './Pokedex';
 import About from './About';
 import Nav from './Nav';
 
-class App extends React.Component {
+export default class App extends React.Component {
 	render() {
 		return (
 			<div>
@@ -21,4 +21,3 @@ class App extends React.Component {
 	}
 }
 
-export default App;

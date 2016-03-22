@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Pokemon extends React.Component {
+export default class Pokemon extends React.Component {
 	render() {
 		let pokemon = this.props.pokemon;
 		if (pokemon.national_id < 10) {
@@ -22,5 +22,3 @@ class Pokemon extends React.Component {
 		);
 	}
 }
-
-export default Pokemon;

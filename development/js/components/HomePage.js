@@ -20,7 +20,7 @@ const pokedex = () => {
 	return shuffle(idArr);
 }
 
-class HomePage extends React.Component {
+export default class HomePage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.catchPokemon = this.catchPokemon.bind(this);
@@ -45,5 +45,3 @@ class HomePage extends React.Component {
 		);
 	}
 }
-
-export default HomePage;
