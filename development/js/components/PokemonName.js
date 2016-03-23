@@ -3,8 +3,8 @@ import Pokemon from './Pokemon';
 
 export default class PokemonName extends React.Component {
 	render() {
-		let pokemon = this.props.pokemon.map(pokemonId => {
-			return <Pokemon key={pokemonId.national_id} pokemon={pokemonId} />
+		const pokemon = this.props.pokemon.map(pokemonId => {
+			return <Pokemon key={pokemonId.national_id} pokemon={pokemonId} />;
 		});
 
 		return (

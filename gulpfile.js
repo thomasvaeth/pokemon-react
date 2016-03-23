@@ -3,12 +3,20 @@
 var gulp = require('gulp');
 var babelify = require('babelify');
 var browserify = require('browserify');
+var eslint = require('gulp-eslint');
 var jade = require('gulp-jade');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var sass = require('gulp-sass');
 var source = require('vinyl-source-stream');
 var uglify = require('gulp-uglify');
+
+gulp.task('lint', function() {
+	return gulp.src('./development/js/**/*.js')
+	.pipe(eslint())
+	.pipe(eslint.format())
+	.pipe(eslint.failAfterError());
+});
 
 gulp.task('babel', function() {
 	return browserify('./development/js/app.js')

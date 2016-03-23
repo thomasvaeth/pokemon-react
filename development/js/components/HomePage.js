@@ -2,23 +2,23 @@ import React from 'react';
 import CardsBinder from './CardsBinder';
 
 const shuffle = arr => {
-	let m = arr.length, t, i;
+	let m = arr.length;
 	while (m) {
-		i = Math.floor(Math.random() * m--);
-		t = arr[m];
+		const i = Math.floor(Math.random() * m--);
+		const t = arr[m];
 		arr[m] = arr[i];
 		arr[i] = t;
 	}
 	return arr;
-}
+};
 
 const pokedex = () => {
-	let idArr = [];
+	const idArr = [];
 	for (let i = 1; i <= 151; i++) {
 		idArr.push(i);
 	}
 	return shuffle(idArr);
-}
+};
 
 export default class HomePage extends React.Component {
 	constructor(props) {
@@ -28,7 +28,7 @@ export default class HomePage extends React.Component {
 	}
 
 	catchPokemon() {
-		let pokemon = pokedex().slice(0, 8);
+		const pokemon = pokedex().slice(0, 8);
 		this.setState({pokemonIds: pokemon});
 	}
 

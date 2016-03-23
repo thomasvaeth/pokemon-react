@@ -2,21 +2,21 @@ import React from 'react';
 
 const convertWeight = weight => {
 	if (!isNaN(weight)) return (weight * 0.220462).toFixed(0);
-}
+};
 
 const convertHeight = height => {
 	if (!isNaN(height)) {
-		let converted = (height * 0.328084);
-		let feet = Math.floor(converted);
-		let inches = ((converted - feet) * 3.93701).toFixed(0);
-		return feet + "'" + inches + '"';
+		const converted = (height * 0.328084);
+		const feet = Math.floor(converted);
+		const inches = ((converted - feet) * 3.93701).toFixed(0);
+		return feet + '\'' + inches + '"';
 	}
-}
+};
 
 export default class PokemonStats extends React.Component {
 	render() {
-		let pokemon = this.props.pokemon;
-		let converted_weight = convertWeight(pokemon.weight);
+		const pokemon = this.props.pokemon;
+		const converted_weight = convertWeight(pokemon.weight);
 		if (pokemon.national_id < 10) {
 			pokemon.formatted_id = '00' + pokemon.national_id;
 		} else if (pokemon.national_id < 100) {

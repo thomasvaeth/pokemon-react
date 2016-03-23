@@ -250,12 +250,10 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var shuffle = function shuffle(arr) {
-	var m = arr.length,
-	    t = undefined,
-	    i = undefined;
+	var m = arr.length;
 	while (m) {
-		i = Math.floor(Math.random() * m--);
-		t = arr[m];
+		var i = Math.floor(Math.random() * m--);
+		var t = arr[m];
 		arr[m] = arr[i];
 		arr[i] = t;
 	}
@@ -679,7 +677,7 @@ var convertHeight = function convertHeight(height) {
 		var converted = height * 0.328084;
 		var feet = Math.floor(converted);
 		var inches = ((converted - feet) * 3.93701).toFixed(0);
-		return feet + "'" + inches + '"';
+		return feet + '\'' + inches + '"';
 	}
 };
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class Pokemon extends React.Component {
 	render() {
-		let pokemon = this.props.pokemon;
+		const pokemon = this.props.pokemon;
 		if (pokemon.national_id < 10) {
 			pokemon.formatted_number = '00' + pokemon.national_id;
 		} else if (pokemon.national_id < 100) {
