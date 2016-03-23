@@ -12,15 +12,14 @@ Pokemon React is something I decided to build after seeing the Pokemon API came 
 * Sass/CSS
   - flexbox
 * JavaScript
-* jQuery
 * Gulp
-  - gulp, babel-preset-es2015, babel-preset-react, babelify, browserify, gulp-jade, gulp-minify-css, gulp-rename, gulp-sass, gulp-uglify, vinyl-source-stream
+  - gulp, babel-eslint, babel-preset-es2015, babel-preset-react, babelify, browserify, eslint, gulp-eslint, gulp-jade, gulp-minify-css, gulp-rename, gulp-sass, gulp-uglify, vinyl-source-stream
 * Animate.CSS
 * Pokemon API
 
 ### Installation
 * ````npm install````
-  - Node modules include body-parser, express, jquery, mongoose, node-mongo-seeds, react, react-dom, react-router
+  - Node modules include body-parser, express, jquery, mongoose, node-mongo-seeds, react, react-dom, react-router, whatwg-fetch
 
 ### Screenshots
 ![Home](https://github.com/thomasvaeth/pokemon-react/blob/master/screenshots/screenshot-1.png "Desktop screenshot")

@@ -1,7 +1,10 @@
 {
   "parser": "babel-eslint",
   "rules": {
+    "no-const-assign": [2],
+    "no-irregular-whitespace": [1],
     "no-var":[2],
+    "object-curly-spacing": [2, "always"],
     "prefer-const":[1],
     "quotes": [2, "single"],
     "semi": [2, "always"]

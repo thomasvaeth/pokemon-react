@@ -8,12 +8,6 @@ router.route('/')
       if (err) return res.status(500).send(err);
       res.send(pokemon);
     });
-  })
-  .post(function(req, res) {
-    Pokemon.create(req.body, function(err, pokemon) {
-      if (err) return res.status(500).send(err);
-      res.send(pokemon);
-    });
   });
 
 router.route('/:id')

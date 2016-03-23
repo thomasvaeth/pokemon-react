@@ -1,5 +1,5 @@
 import React from 'react';
-import {browserHistory, IndexRoute, Router, Route} from 'react-router';
+import { browserHistory, IndexRoute, Router, Route } from 'react-router';
 import HomePage from './HomePage';
 import Pokedex from './Pokedex';
 import About from './About';

@@ -24,12 +24,12 @@ export default class HomePage extends React.Component {
 	constructor(props) {
 		super(props);
 		this.catchPokemon = this.catchPokemon.bind(this);
-		this.state = {pokemonIds: [1, 4, 7]};
+		this.state = { pokemonIds: [1, 4, 7] };
 	}
 
 	catchPokemon() {
 		const pokemon = pokedex().slice(0, 8);
-		this.setState({pokemonIds: pokemon});
+		this.setState({ pokemonIds: pokemon });
 	}
 
 	render() {

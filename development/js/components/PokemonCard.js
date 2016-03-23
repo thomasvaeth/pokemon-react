@@ -1,17 +1,20 @@
 import React from 'react';
-import $ from 'jquery';
 import PokemonStats from './PokemonStats';
 
 export default class PokemonCard extends React.Component {
 	constructor(props) {
 		super(props);
-		this.state = {pokemon: {}};
+		this.state = { pokemon: {} };
 		this.getPokemon();
 	}
 
 	getPokemon() {
-		$.get(`/api/pokemon/${this.props.pokemonId}`).done(pokemon => {
-			this.setState({pokemon});
+		fetch(`/api/pokemon/${this.props.pokemonId}`).then(res => { 
+			return res.json();
+		}).then(pokemon => { 
+			this.setState({ pokemon });
+		}).catch(e => {
+			console.log('Your Gameboy is out of batteries.');
 		});
 	}
 
