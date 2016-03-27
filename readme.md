@@ -13,7 +13,7 @@ Pokemon React is something I decided to build after seeing the Pokemon API came 
   - flexbox
 * JavaScript
 * Gulp
-  - gulp, babel-eslint, babel-preset-es2015, babel-preset-react, babelify, browserify, eslint, gulp-eslint, gulp-jade, gulp-minify-css, gulp-rename, gulp-sass, gulp-uglify, vinyl-source-stream
+  - gulp, babel-eslint, babel-preset-es2015, babel-preset-react, babelify, browserify, eslint, gulp-autoprefixer, gulp-eslint, gulp-jade, gulp-minify-css, gulp-rename, gulp-sass, gulp-uglify, vinyl-source-stream
 * Animate.CSS
 * Pokemon API
 

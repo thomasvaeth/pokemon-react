@@ -1,6 +1,7 @@
 'use strict';
 
 var gulp = require('gulp');
+var autoprefixer = require('gulp-autoprefixer');
 var babelify = require('babelify');
 var browserify = require('browserify');
 var eslint = require('gulp-eslint');
@@ -42,6 +43,7 @@ gulp.task('jade', function() {
 gulp.task('sass', function() {
 	return gulp.src('./development/scss/main.scss')
 	.pipe(sass().on('error', sass.logError))
+	.pipe(autoprefixer({browsers: ['last 2 versions'], cascade: false}))
 	.pipe(minifyCss({compatibility: 'ie8'}))
 	.pipe(rename('main.min.css'))
 	.pipe(gulp.dest('./public/css'));
