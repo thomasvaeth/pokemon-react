@@ -1,7 +1,7 @@
 [
 {
 	"name": "Bulbasaur",
-	"sprite": "http://pokeapi.co/media/img/1.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
 	"hp": 45,
 	"height": 7,
 	"weight": 69,
@@ -12,7 +12,7 @@
 },
 {
 	"name": "Ivysaur",
-	"sprite": "http://pokeapi.co/media/img/2.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
 	"hp": 60,
 	"height": 10,
 	"weight": 130,
@@ -23,7 +23,7 @@
 },
 {
 	"name": "Venusaur",
-	"sprite": "http://pokeapi.co/media/img/3.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
 	"hp": 80,
 	"height": 20,
 	"weight": 1000,
@@ -34,7 +34,7 @@
 },
 {
 	"name": "Charmander",
-	"sprite": "http://pokeapi.co/media/img/4.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
 	"hp": 39,
 	"height": 6,
 	"weight": 85,
@@ -45,7 +45,7 @@
 },
 {
 	"name": "Charmeleon",
-	"sprite": "http://pokeapi.co/media/img/5.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
 	"hp": 58,
 	"height": 11,
 	"weight": 190,
@@ -56,7 +56,7 @@
 },
 {
 	"name": "Charizard",
-	"sprite": "http://pokeapi.co/media/img/6.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
 	"hp": 78,
 	"height": 17,
 	"weight": 905,
@@ -67,7 +67,7 @@
 },
 {
 	"name": "Squirtle",
-	"sprite": "http://pokeapi.co/media/img/7.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
 	"hp": 44,
 	"height": 5,
 	"weight": 90,
@@ -78,7 +78,7 @@
 },
 {
 	"name": "Wartortle",
-	"sprite": "http://pokeapi.co/media/img/8.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
 	"hp": 59,
 	"height": 10,
 	"weight": 225,
@@ -89,7 +89,7 @@
 },
 {
 	"name": "Blastoise",
-	"sprite": "http://pokeapi.co/media/img/9.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
 	"hp": 79,
 	"height": 16,
 	"weight": 855,
@@ -100,7 +100,7 @@
 },
 {
 	"name": "Caterpie",
-	"sprite": "http://pokeapi.co/media/img/10.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
 	"hp": 45,
 	"height": 3,
 	"weight": 29,
@@ -111,7 +111,7 @@
 },
 {
 	"name": "Metapod",
-	"sprite": "http://pokeapi.co/media/img/11.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
 	"hp": 50,
 	"height": 7,
 	"weight": 99,
@@ -122,7 +122,7 @@
 },
 {
 	"name": "Butterfree",
-	"sprite": "http://pokeapi.co/media/img/12.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
 	"hp": 60,
 	"height": 11,
 	"weight": 320,
@@ -133,7 +133,7 @@
 },
 {
 	"name": "Weedle",
-	"sprite": "http://pokeapi.co/media/img/13.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
 	"hp": 40,
 	"height": 3,
 	"weight": 32,
@@ -144,7 +144,7 @@
 },
 {
 	"name": "Kakuna",
-	"sprite": "http://pokeapi.co/media/img/14.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
 	"hp": 45,
 	"height": 6,
 	"weight": 100,
@@ -155,7 +155,7 @@
 },
 {
 	"name": "Beedrill",
-	"sprite": "http://pokeapi.co/media/img/15.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
 	"hp": 65,
 	"height": 10,
 	"weight": 295,
@@ -166,7 +166,7 @@
 },
 {
 	"name": "Pidgey",
-	"sprite": "http://pokeapi.co/media/img/16.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
 	"hp": 40,
 	"height": 3,
 	"weight": 18,
@@ -177,7 +177,7 @@
 },
 {
 	"name": "Pidgeotto",
-	"sprite": "http://pokeapi.co/media/img/17.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
 	"hp": 63,
 	"height": 11,
 	"weight": 300,
@@ -188,7 +188,7 @@
 },
 {
 	"name": "Pidgeot",
-	"sprite": "http://pokeapi.co/media/img/18.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
 	"hp": 83,
 	"height": 15,
 	"weight": 395,
@@ -199,7 +199,7 @@
 },
 {
 	"name": "Rattata",
-	"sprite": "http://pokeapi.co/media/img/19.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
 	"hp": 30,
 	"height": 3,
 	"weight": 35,
@@ -210,7 +210,7 @@
 },
 {
 	"name": "Raticate",
-	"sprite": "http://pokeapi.co/media/img/20.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
 	"hp": 55,
 	"height": 7,
 	"weight": 185,
@@ -221,7 +221,7 @@
 },
 {
 	"name": "Spearow",
-	"sprite": "http://pokeapi.co/media/img/21.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
 	"hp": 40,
 	"height": 3,
 	"weight": 20,
@@ -232,7 +232,7 @@
 },
 {
 	"name": "Fearow",
-	"sprite": "http://pokeapi.co/media/img/22.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
 	"hp": 65,
 	"height": 12,
 	"weight": 380,
@@ -243,7 +243,7 @@
 },
 {
 	"name": "Ekans",
-	"sprite": "http://pokeapi.co/media/img/23.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
 	"hp": 35,
 	"height": 20,
 	"weight": 69,
@@ -254,7 +254,7 @@
 },
 {
 	"name": "Arbok",
-	"sprite": "http://pokeapi.co/media/img/24.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
 	"hp": 60,
 	"height": 35,
 	"weight": 650,
@@ -265,7 +265,7 @@
 },
 {
 	"name": "Pikachu",
-	"sprite": "http://pokeapi.co/media/img/25.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
 	"hp": 35,
 	"height": 4,
 	"weight": 60,
@@ -276,7 +276,7 @@
 },
 {
 	"name": "Raichu",
-	"sprite": "http://pokeapi.co/media/img/26.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
 	"hp": 60,
 	"height": 8,
 	"weight": 300,
@@ -287,7 +287,7 @@
 },
 {
 	"name": "Sandshrew",
-	"sprite": "http://pokeapi.co/media/img/27.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
 	"hp": 50,
 	"height": 6,
 	"weight": 120,
@@ -298,7 +298,7 @@
 },
 {
 	"name": "Sandslash",
-	"sprite": "http://pokeapi.co/media/img/28.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
 	"hp": 75,
 	"height": 10,
 	"weight": 295,
@@ -309,7 +309,7 @@
 },
 {
 	"name": "Nidoran F",
-	"sprite": "http://pokeapi.co/media/img/29.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
 	"hp": 55,
 	"height": 4,
 	"weight": 70,
@@ -320,7 +320,7 @@
 },
 {
 	"name": "Nidorina",
-	"sprite": "http://pokeapi.co/media/img/30.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
 	"hp": 70,
 	"height": 8,
 	"weight": 200,
@@ -331,7 +331,7 @@
 },
 {
 	"name": "Nidoqueen",
-	"sprite": "http://pokeapi.co/media/img/31.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
 	"hp": 90,
 	"height": 13,
 	"weight": 600,
@@ -342,7 +342,7 @@
 },
 {
 	"name": "Nidoran M",
-	"sprite": "http://pokeapi.co/media/img/32.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
 	"hp": 46,
 	"height": 5,
 	"weight": 90,
@@ -353,7 +353,7 @@
 },
 {
 	"name": "Nidorino",
-	"sprite": "http://pokeapi.co/media/img/33.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
 	"hp": 61,
 	"height": 9,
 	"weight": 195,
@@ -364,7 +364,7 @@
 },
 {
 	"name": "Nidoking",
-	"sprite": "http://pokeapi.co/media/img/34.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
 	"hp": 81,
 	"height": 14,
 	"weight": 620,
@@ -375,7 +375,7 @@
 },
 {
 	"name": "Clefairy",
-	"sprite": "http://pokeapi.co/media/img/35.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
 	"hp": 70,
 	"height": 6,
 	"weight": 75,
@@ -386,7 +386,7 @@
 },
 {
 	"name": "Clefable",
-	"sprite": "http://pokeapi.co/media/img/36.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
 	"hp": 95,
 	"height": 13,
 	"weight": 400,
@@ -397,7 +397,7 @@
 },
 {
 	"name": "Vulpix",
-	"sprite": "http://pokeapi.co/media/img/37.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
 	"hp": 38,
 	"height": 6,
 	"weight": 99,
@@ -408,7 +408,7 @@
 },
 {
 	"name": "Ninetales",
-	"sprite": "http://pokeapi.co/media/img/38.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
 	"hp": 73,
 	"height": 11,
 	"weight": 199,
@@ -419,7 +419,7 @@
 },
 {
 	"name": "Jigglypuff",
-	"sprite": "http://pokeapi.co/media/img/39.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
 	"hp": 115,
 	"height": 5,
 	"weight": 55,
@@ -430,7 +430,7 @@
 },
 {
 	"name": "Wigglytuff",
-	"sprite": "http://pokeapi.co/media/img/40.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
 	"hp": 140,
 	"height": 10,
 	"weight": 120,
@@ -441,7 +441,7 @@
 },
 {
 	"name": "Zubat",
-	"sprite": "http://pokeapi.co/media/img/41.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
 	"hp": 40,
 	"height": 8,
 	"weight": 75,
@@ -452,7 +452,7 @@
 },
 {
 	"name": "Golbat",
-	"sprite": "http://pokeapi.co/media/img/42.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
 	"hp": 75,
 	"height": 16,
 	"weight": 550,
@@ -463,7 +463,7 @@
 },
 {
 	"name": "Oddish",
-	"sprite": "http://pokeapi.co/media/img/43.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
 	"hp": 45,
 	"height": 5,
 	"weight": 54,
@@ -474,7 +474,7 @@
 },
 {
 	"name": "Gloom",
-	"sprite": "http://pokeapi.co/media/img/44.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
 	"hp": 60,
 	"height": 8,
 	"weight": 86,
@@ -485,7 +485,7 @@
 },
 {
 	"name": "Vileplume",
-	"sprite": "http://pokeapi.co/media/img/45.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
 	"hp": 75,
 	"height": 12,
 	"weight": 186,
@@ -496,7 +496,7 @@
 },
 {
 	"name": "Paras",
-	"sprite": "http://pokeapi.co/media/img/46.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
 	"hp": 35,
 	"height": 3,
 	"weight": 54,
@@ -507,7 +507,7 @@
 },
 {
 	"name": "Parasect",
-	"sprite": "http://pokeapi.co/media/img/47.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
 	"hp": 60,
 	"height": 10,
 	"weight": 295,
@@ -518,7 +518,7 @@
 },
 {
 	"name": "Venonat",
-	"sprite": "http://pokeapi.co/media/img/48.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
 	"hp": 60,
 	"height": 10,
 	"weight": 300,
@@ -529,7 +529,7 @@
 },
 {
 	"name": "Venomoth",
-	"sprite": "http://pokeapi.co/media/img/49.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
 	"hp": 70,
 	"height": 15,
 	"weight": 125,
@@ -540,7 +540,7 @@
 },
 {
 	"name": "Diglett",
-	"sprite": "http://pokeapi.co/media/img/50.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
 	"hp": 10,
 	"height": 2,
 	"weight": 8,
@@ -551,7 +551,7 @@
 },
 {
 	"name": "Dugtrio",
-	"sprite": "http://pokeapi.co/media/img/51.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
 	"hp": 35,
 	"height": 7,
 	"weight": 333,
@@ -562,7 +562,7 @@
 },
 {
 	"name": "Meowth",
-	"sprite": "http://pokeapi.co/media/img/52.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
 	"hp": 40,
 	"height": 4,
 	"weight": 42,
@@ -573,7 +573,7 @@
 },
 {
 	"name": "Persian",
-	"sprite": "http://pokeapi.co/media/img/53.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
 	"hp": 65,
 	"height": 10,
 	"weight": 320,
@@ -584,7 +584,7 @@
 },
 {
 	"name": "Psyduck",
-	"sprite": "http://pokeapi.co/media/img/54.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
 	"hp": 50,
 	"height": 8,
 	"weight": 196,
@@ -595,7 +595,7 @@
 },
 {
 	"name": "Golduck",
-	"sprite": "http://pokeapi.co/media/img/55.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
 	"hp": 80,
 	"height": 17,
 	"weight": 766,
@@ -606,7 +606,7 @@
 },
 {
 	"name": "Mankey",
-	"sprite": "http://pokeapi.co/media/img/56.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
 	"hp": 40,
 	"height": 5,
 	"weight": 280,
@@ -617,7 +617,7 @@
 },
 {
 	"name": "Primeape",
-	"sprite": "http://pokeapi.co/media/img/57.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
 	"hp": 65,
 	"height": 10,
 	"weight": 320,
@@ -628,7 +628,7 @@
 },
 {
 	"name": "Growlithe",
-	"sprite": "http://pokeapi.co/media/img/58.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
 	"hp": 55,
 	"height": 7,
 	"weight": 190,
@@ -639,7 +639,7 @@
 },
 {
 	"name": "Arcanine",
-	"sprite": "http://pokeapi.co/media/img/59.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
 	"hp": 90,
 	"height": 19,
 	"weight": 1550,
@@ -650,7 +650,7 @@
 },
 {
 	"name": "Poliwag",
-	"sprite": "http://pokeapi.co/media/img/60.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
 	"hp": 40,
 	"height": 6,
 	"weight": 124,
@@ -661,7 +661,7 @@
 },
 {
 	"name": "Poliwhirl",
-	"sprite": "http://pokeapi.co/media/img/61.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
 	"hp": 65,
 	"height": 10,
 	"weight": 200,
@@ -672,7 +672,7 @@
 },
 {
 	"name": "Poliwrath",
-	"sprite": "http://pokeapi.co/media/img/62.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
 	"hp": 90,
 	"height": 13,
 	"weight": 540,
@@ -683,7 +683,7 @@
 },
 {
 	"name": "Abra",
-	"sprite": "http://pokeapi.co/media/img/63.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
 	"hp": 25,
 	"height": 9,
 	"weight": 195,
@@ -694,7 +694,7 @@
 },
 {
 	"name": "Kadabra",
-	"sprite": "http://pokeapi.co/media/img/64.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
 	"hp": 40,
 	"height": 13,
 	"weight": 565,
@@ -705,7 +705,7 @@
 },
 {
 	"name": "Alakazam",
-	"sprite": "http://pokeapi.co/media/img/65.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
 	"hp": 55,
 	"height": 15,
 	"weight": 480,
@@ -716,7 +716,7 @@
 },
 {
 	"name": "Machop",
-	"sprite": "http://pokeapi.co/media/img/66.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
 	"hp": 70,
 	"height": 8,
 	"weight": 195,
@@ -727,7 +727,7 @@
 },
 {
 	"name": "Machoke",
-	"sprite": "http://pokeapi.co/media/img/67.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
 	"hp": 80,
 	"height": 15,
 	"weight": 705,
@@ -738,7 +738,7 @@
 },
 {
 	"name": "Machamp",
-	"sprite": "http://pokeapi.co/media/img/68.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
 	"hp": 90,
 	"height": 16,
 	"weight": 1300,
@@ -749,7 +749,7 @@
 },
 {
 	"name": "Bellsprout",
-	"sprite": "http://pokeapi.co/media/img/69.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
 	"hp": 50,
 	"height": 7,
 	"weight": 40,
@@ -760,7 +760,7 @@
 },
 {
 	"name": "Weepinbell",
-	"sprite": "http://pokeapi.co/media/img/70.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
 	"hp": 65,
 	"height": 10,
 	"weight": 64,
@@ -771,7 +771,7 @@
 },
 {
 	"name": "Victreebel",
-	"sprite": "http://pokeapi.co/media/img/71.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
 	"hp": 80,
 	"height": 17,
 	"weight": 155,
@@ -782,7 +782,7 @@
 },
 {
 	"name": "Tentacool",
-	"sprite": "http://pokeapi.co/media/img/72.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
 	"hp": 40,
 	"height": 9,
 	"weight": 455,
@@ -793,7 +793,7 @@
 },
 {
 	"name": "Tentacruel",
-	"sprite": "http://pokeapi.co/media/img/73.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
 	"hp": 80,
 	"height": 16,
 	"weight": 550,
@@ -804,7 +804,7 @@
 },
 {
 	"name": "Geodude",
-	"sprite": "http://pokeapi.co/media/img/74.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
 	"hp": 40,
 	"height": 4,
 	"weight": 200,
@@ -815,7 +815,7 @@
 },
 {
 	"name": "Graveler",
-	"sprite": "http://pokeapi.co/media/img/75.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
 	"hp": 55,
 	"height": 10,
 	"weight": 1050,
@@ -826,7 +826,7 @@
 },
 {
 	"name": "Golem",
-	"sprite": "http://pokeapi.co/media/img/76.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
 	"hp": 80,
 	"height": 14,
 	"weight": 3000,
@@ -837,7 +837,7 @@
 },
 {
 	"name": "Ponyta",
-	"sprite": "http://pokeapi.co/media/img/77.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
 	"hp": 50,
 	"height": 10,
 	"weight": 300,
@@ -848,7 +848,7 @@
 },
 {
 	"name": "Rapidash",
-	"sprite": "http://pokeapi.co/media/img/78.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
 	"hp": 65,
 	"height": 17,
 	"weight": 950,
@@ -859,7 +859,7 @@
 },
 {
 	"name": "Slowpoke",
-	"sprite": "http://pokeapi.co/media/img/79.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
 	"hp": 90,
 	"height": 12,
 	"weight": 360,
@@ -870,7 +870,7 @@
 },
 {
 	"name": "Slowbro",
-	"sprite": "http://pokeapi.co/media/img/80.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
 	"hp": 95,
 	"height": 16,
 	"weight": 785,
@@ -881,7 +881,7 @@
 },
 {
 	"name": "Magnemite",
-	"sprite": "http://pokeapi.co/media/img/81.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
 	"hp": 25,
 	"height": 3,
 	"weight": 60,
@@ -892,7 +892,7 @@
 },
 {
 	"name": "Magneton",
-	"sprite": "http://pokeapi.co/media/img/82.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
 	"hp": 50,
 	"height": 10,
 	"weight": 600,
@@ -903,7 +903,7 @@
 },
 {
 	"name": "Farfetch'd",
-	"sprite": "http://pokeapi.co/media/img/83.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
 	"hp": 52,
 	"height": 8,
 	"weight": 150,
@@ -914,7 +914,7 @@
 },
 {
 	"name": "Doduo",
-	"sprite": "http://pokeapi.co/media/img/84.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
 	"hp": 35,
 	"height": 14,
 	"weight": 392,
@@ -925,7 +925,7 @@
 },
 {
 	"name": "Dodrio",
-	"sprite": "http://pokeapi.co/media/img/85.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
 	"hp": 60,
 	"height": 18,
 	"weight": 852,
@@ -936,7 +936,7 @@
 },
 {
 	"name": "Seel",
-	"sprite": "http://pokeapi.co/media/img/86.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
 	"hp": 65,
 	"height": 11,
 	"weight": 900,
@@ -947,7 +947,7 @@
 },
 {
 	"name": "Dewgong",
-	"sprite": "http://pokeapi.co/media/img/87.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
 	"hp": 90,
 	"height": 17,
 	"weight": 1200,
@@ -958,7 +958,7 @@
 },
 {
 	"name": "Grimer",
-	"sprite": "http://pokeapi.co/media/img/88.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
 	"hp": 80,
 	"height": 9,
 	"weight": 300,
@@ -969,7 +969,7 @@
 },
 {
 	"name": "Muk",
-	"sprite": "http://pokeapi.co/media/img/89.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
 	"hp": 105,
 	"height": 12,
 	"weight": 300,
@@ -980,7 +980,7 @@
 },
 {
 	"name": "Shellder",
-	"sprite": "http://pokeapi.co/media/img/90.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
 	"hp": 30,
 	"height": 3,
 	"weight": 40,
@@ -991,7 +991,7 @@
 },
 {
 	"name": "Cloyster",
-	"sprite": "http://pokeapi.co/media/img/91.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
 	"hp": 50,
 	"height": 15,
 	"weight": 1325,
@@ -1002,7 +1002,7 @@
 },
 {
 	"name": "Gastly",
-	"sprite": "http://pokeapi.co/media/img/92.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
 	"hp": 30,
 	"height": 13,
 	"weight": 1,
@@ -1013,7 +1013,7 @@
 },
 {
 	"name": "Haunter",
-	"sprite": "http://pokeapi.co/media/img/93.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
 	"hp": 45,
 	"height": 16,
 	"weight": 1,
@@ -1024,7 +1024,7 @@
 },
 {
 	"name": "Gengar",
-	"sprite": "http://pokeapi.co/media/img/94.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
 	"hp": 60,
 	"height": 15,
 	"weight": 405,
@@ -1035,7 +1035,7 @@
 },
 {
 	"name": "Onix",
-	"sprite": "http://pokeapi.co/media/img/95.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
 	"hp": 35,
 	"height": 88,
 	"weight": 2100,
@@ -1046,7 +1046,7 @@
 },
 {
 	"name": "Drowzee",
-	"sprite": "http://pokeapi.co/media/img/96.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
 	"hp": 60,
 	"height": 10,
 	"weight": 324,
@@ -1057,7 +1057,7 @@
 },
 {
 	"name": "Hypno",
-	"sprite": "http://pokeapi.co/media/img/97.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
 	"hp": 85,
 	"height": 16,
 	"weight": 756,
@@ -1068,7 +1068,7 @@
 },
 {
 	"name": "Krabby",
-	"sprite": "http://pokeapi.co/media/img/98.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
 	"hp": 30,
 	"height": 4,
 	"weight": 65,
@@ -1079,7 +1079,7 @@
 },
 {
 	"name": "Kingler",
-	"sprite": "http://pokeapi.co/media/img/99.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
 	"hp": 55,
 	"height": 13,
 	"weight": 600,
@@ -1090,7 +1090,7 @@
 },
 {
 	"name": "Voltorb",
-	"sprite": "http://pokeapi.co/media/img/100.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
 	"hp": 40,
 	"height": 5,
 	"weight": 104,
@@ -1101,7 +1101,7 @@
 },
 {
 	"name": "Electrode",
-	"sprite": "http://pokeapi.co/media/img/101.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
 	"hp": 60,
 	"height": 12,
 	"weight": 666,
@@ -1112,7 +1112,7 @@
 },
 {
 	"name": "Exeggcute",
-	"sprite": "http://pokeapi.co/media/img/102.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
 	"hp": 60,
 	"height": 4,
 	"weight": 25,
@@ -1123,7 +1123,7 @@
 },
 {
 	"name": "Exeggutor",
-	"sprite": "http://pokeapi.co/media/img/103.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
 	"hp": 95,
 	"height": 20,
 	"weight": 1200,
@@ -1134,7 +1134,7 @@
 },
 {
 	"name": "Cubone",
-	"sprite": "http://pokeapi.co/media/img/104.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
 	"hp": 50,
 	"height": 4,
 	"weight": 65,
@@ -1145,7 +1145,7 @@
 },
 {
 	"name": "Marowak",
-	"sprite": "http://pokeapi.co/media/img/105.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
 	"hp": 60,
 	"height": 10,
 	"weight": 450,
@@ -1156,7 +1156,7 @@
 },
 {
 	"name": "Hitmonlee",
-	"sprite": "http://pokeapi.co/media/img/106.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
 	"hp": 50,
 	"height": 15,
 	"weight": 498,
@@ -1167,7 +1167,7 @@
 },
 {
 	"name": "Hitmonchan",
-	"sprite": "http://pokeapi.co/media/img/107.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
 	"hp": 50,
 	"height": 14,
 	"weight": 502,
@@ -1178,7 +1178,7 @@
 },
 {
 	"name": "Lickitung",
-	"sprite": "http://pokeapi.co/media/img/108.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
 	"hp": 90,
 	"height": 12,
 	"weight": 655,
@@ -1189,7 +1189,7 @@
 },
 {
 	"name": "Koffing",
-	"sprite": "http://pokeapi.co/media/img/109.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
 	"hp": 40,
 	"height": 6,
 	"weight": 10,
@@ -1200,7 +1200,7 @@
 },
 {
 	"name": "Weezing",
-	"sprite": "http://pokeapi.co/media/img/110.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
 	"hp": 65,
 	"height": 12,
 	"weight": 95,
@@ -1211,7 +1211,7 @@
 },
 {
 	"name": "Rhyhorn",
-	"sprite": "http://pokeapi.co/media/img/111.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
 	"hp": 80,
 	"height": 10,
 	"weight": 1150,
@@ -1222,7 +1222,7 @@
 },
 {
 	"name": "Rhydon",
-	"sprite": "http://pokeapi.co/media/img/112.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
 	"hp": 105,
 	"height": 19,
 	"weight": 1200,
@@ -1233,7 +1233,7 @@
 },
 {
 	"name": "Chansey",
-	"sprite": "http://pokeapi.co/media/img/113.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
 	"hp": 250,
 	"height": 11,
 	"weight": 346,
@@ -1244,7 +1244,7 @@
 },
 {
 	"name": "Tangela",
-	"sprite": "http://pokeapi.co/media/img/114.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
 	"hp": 65,
 	"height": 10,
 	"weight": 350,
@@ -1255,7 +1255,7 @@
 },
 {
 	"name": "Kangaskhan",
-	"sprite": "http://pokeapi.co/media/img/115.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
 	"hp": 105,
 	"height": 22,
 	"weight": 800,
@@ -1266,7 +1266,7 @@
 },
 {
 	"name": "Horsea",
-	"sprite": "http://pokeapi.co/media/img/116.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
 	"hp": 30,
 	"height": 4,
 	"weight": 80,
@@ -1277,7 +1277,7 @@
 },
 {
 	"name": "Seadra",
-	"sprite": "http://pokeapi.co/media/img/117.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
 	"hp": 55,
 	"height": 12,
 	"weight": 250,
@@ -1288,7 +1288,7 @@
 },
 {
 	"name": "Goldeen",
-	"sprite": "http://pokeapi.co/media/img/118.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
 	"hp": 45,
 	"height": 6,
 	"weight": 150,
@@ -1299,7 +1299,7 @@
 },
 {
 	"name": "Seaking",
-	"sprite": "http://pokeapi.co/media/img/119.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
 	"hp": 80,
 	"height": 13,
 	"weight": 390,
@@ -1310,7 +1310,7 @@
 },
 {
 	"name": "Staryu",
-	"sprite": "http://pokeapi.co/media/img/120.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
 	"hp": 30,
 	"height": 8,
 	"weight": 345,
@@ -1321,7 +1321,7 @@
 },
 {
 	"name": "Starmie",
-	"sprite": "http://pokeapi.co/media/img/121.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
 	"hp": 60,
 	"height": 11,
 	"weight": 800,
@@ -1332,7 +1332,7 @@
 },
 {
 	"name": "Mr. Mime",
-	"sprite": "http://pokeapi.co/media/img/122.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
 	"hp": 40,
 	"height": 13,
 	"weight": 545,
@@ -1343,7 +1343,7 @@
 },
 {
 	"name": "Scyther",
-	"sprite": "http://pokeapi.co/media/img/123.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
 	"hp": 70,
 	"height": 15,
 	"weight": 560,
@@ -1354,7 +1354,7 @@
 },
 {
 	"name": "Jynx",
-	"sprite": "http://pokeapi.co/media/img/124.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
 	"hp": 65,
 	"height": 14,
 	"weight": 406,
@@ -1365,7 +1365,7 @@
 },
 {
 	"name": "Electabuzz",
-	"sprite": "http://pokeapi.co/media/img/125.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
 	"hp": 65,
 	"height": 11,
 	"weight": 300,
@@ -1376,7 +1376,7 @@
 },
 {
 	"name": "Magmar",
-	"sprite": "http://pokeapi.co/media/img/126.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
 	"hp": 65,
 	"height": 13,
 	"weight": 445,
@@ -1387,7 +1387,7 @@
 },
 {
 	"name": "Pinsir",
-	"sprite": "http://pokeapi.co/media/img/127.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
 	"hp": 65,
 	"height": 15,
 	"weight": 550,
@@ -1398,7 +1398,7 @@
 },
 {
 	"name": "Tauros",
-	"sprite": "http://pokeapi.co/media/img/128.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
 	"hp": 75,
 	"height": 14,
 	"weight": 884,
@@ -1409,7 +1409,7 @@
 },
 {
 	"name": "Magikarp",
-	"sprite": "http://pokeapi.co/media/img/129.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
 	"hp": 20,
 	"height": 9,
 	"weight": 100,
@@ -1420,7 +1420,7 @@
 },
 {
 	"name": "Gyarados",
-	"sprite": "http://pokeapi.co/media/img/130.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
 	"hp": 95,
 	"height": 65,
 	"weight": 2350,
@@ -1431,7 +1431,7 @@
 },
 {
 	"name": "Lapras",
-	"sprite": "http://pokeapi.co/media/img/131.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
 	"hp": 130,
 	"height": 25,
 	"weight": 2200,
@@ -1442,7 +1442,7 @@
 },
 {
 	"name": "Ditto",
-	"sprite": "http://pokeapi.co/media/img/132.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
 	"hp": 48,
 	"height": 3,
 	"weight": 40,
@@ -1453,7 +1453,7 @@
 },
 {
 	"name": "Eevee",
-	"sprite": "http://pokeapi.co/media/img/133.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
 	"hp": 55,
 	"height": 3,
 	"weight": 65,
@@ -1464,7 +1464,7 @@
 },
 {
 	"name": "Vaporeon",
-	"sprite": "http://pokeapi.co/media/img/134.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
 	"hp": 130,
 	"height": 10,
 	"weight": 290,
@@ -1475,7 +1475,7 @@
 },
 {
 	"name": "Jolteon",
-	"sprite": "http://pokeapi.co/media/img/135.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
 	"hp": 65,
 	"height": 8,
 	"weight": 245,
@@ -1486,7 +1486,7 @@
 },
 {
 	"name": "Flareon",
-	"sprite": "http://pokeapi.co/media/img/136.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
 	"hp": 65,
 	"height": 9,
 	"weight": 250,
@@ -1497,7 +1497,7 @@
 },
 {
 	"name": "Porygon",
-	"sprite": "http://pokeapi.co/media/img/137.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
 	"hp": 65,
 	"height": 8,
 	"weight": 365,
@@ -1508,7 +1508,7 @@
 },
 {
 	"name": "Omanyte",
-	"sprite": "http://pokeapi.co/media/img/138.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
 	"hp": 35,
 	"height": 4,
 	"weight": 75,
@@ -1519,7 +1519,7 @@
 },
 {
 	"name": "Omastar",
-	"sprite": "http://pokeapi.co/media/img/139.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
 	"hp": 70,
 	"height": 10,
 	"weight": 350,
@@ -1530,7 +1530,7 @@
 },
 {
 	"name": "Kabuto",
-	"sprite": "http://pokeapi.co/media/img/140.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
 	"hp": 30,
 	"height": 5,
 	"weight": 115,
@@ -1541,7 +1541,7 @@
 },
 {
 	"name": "Kabutops",
-	"sprite": "http://pokeapi.co/media/img/141.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
 	"hp": 60,
 	"height": 13,
 	"weight": 405,
@@ -1552,7 +1552,7 @@
 },
 {
 	"name": "Aerodactyl",
-	"sprite": "http://pokeapi.co/media/img/142.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
 	"hp": 80,
 	"height": 18,
 	"weight": 590,
@@ -1563,7 +1563,7 @@
 },
 {
 	"name": "Snorlax",
-	"sprite": "http://pokeapi.co/media/img/143.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
 	"hp": 160,
 	"height": 21,
 	"weight": 4600,
@@ -1574,7 +1574,7 @@
 },
 {
 	"name": "Articuno",
-	"sprite": "http://pokeapi.co/media/img/144.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
 	"hp": 90,
 	"height": 17,
 	"weight": 554,
@@ -1585,7 +1585,7 @@
 },
 {
 	"name": "Zapdos",
-	"sprite": "http://pokeapi.co/media/img/145.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
 	"hp": 90,
 	"height": 16,
 	"weight": 526,
@@ -1596,7 +1596,7 @@
 },
 {
 	"name": "Moltres",
-	"sprite": "http://pokeapi.co/media/img/146.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
 	"hp": 90,
 	"height": 20,
 	"weight": 600,
@@ -1607,7 +1607,7 @@
 },
 {
 	"name": "Dratini",
-	"sprite": "http://pokeapi.co/media/img/147.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
 	"hp": 41,
 	"height": 18,
 	"weight": 33,
@@ -1618,7 +1618,7 @@
 },
 {
 	"name": "Dragonair",
-	"sprite": "http://pokeapi.co/media/img/148.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
 	"hp": 61,
 	"height": 40,
 	"weight": 165,
@@ -1629,7 +1629,7 @@
 },
 {
 	"name": "Dragonite",
-	"sprite": "http://pokeapi.co/media/img/149.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
 	"hp": 91,
 	"height": 22,
 	"weight": 2100,
@@ -1640,7 +1640,7 @@
 },
 {
 	"name": "Mewtwo",
-	"sprite": "http://pokeapi.co/media/img/150.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
 	"hp": 106,
 	"height": 20,
 	"weight": 1220,
@@ -1651,7 +1651,7 @@
 },
 {
 	"name": "Mew",
-	"sprite": "http://pokeapi.co/media/img/151.png",
+	"sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
 	"hp": 100,
 	"height": 4,
 	"weight": 40,
